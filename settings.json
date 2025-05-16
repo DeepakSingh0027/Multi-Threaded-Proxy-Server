@@ -1,0 +1,6 @@
+{
+  "host": "127.0.0.1",
+  "port": 8888,
+  "cache_limit": 50,
+  "blacklist": ["apple.com", "facebook.com", "geu.ac.in"]
+}
