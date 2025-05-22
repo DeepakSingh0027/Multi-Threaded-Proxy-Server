@@ -73,7 +73,7 @@ def handle_http(client_socket, request, client_addr):
         cache_key = generate_cache_key(dest_host, path)
         logger.debug(f"[Cache Key] Generated for {url_path} -> {cache_key}")
 
-        if is_blacklisted(dest_host):
+        if is_blacklisted(f"{dest_host}{path}"):
             logger.info(f"[Blocked] Attempted access to {dest_host}")
             client_socket.sendall(b"HTTP/1.1 403 Forbidden\r\n\r\nBlocked by Proxy")
             return

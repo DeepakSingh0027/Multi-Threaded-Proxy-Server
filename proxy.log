@@ -1,0 +1,320 @@
+2025-05-22 08:55:21,533 [ERROR] Failed to load cache: Ran out of input
+2025-05-22 08:55:21,533 [INFO] [*] Starting multi-threaded proxy on 127.0.0.1:8888...
+2025-05-22 08:55:21,583 [INFO] [+] New connection from ('127.0.0.1', 64671)
+2025-05-22 08:55:21,584 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64671): CONNECT 91.108.56.129:443 HTTP/1.1
+2025-05-22 08:55:21,584 [INFO] [+] New connection from ('127.0.0.1', 64672)
+2025-05-22 08:55:21,611 [INFO] [>] HTTP Request from ('127.0.0.1', 64672) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:21,612 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:21,612 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:21,616 [ERROR] [!] HTTP error from ('127.0.0.1', 64672) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:21,623 [INFO] [+] New connection from ('127.0.0.1', 64676)
+2025-05-22 08:55:21,646 [INFO] [>] HTTP Request from ('127.0.0.1', 64676) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:21,646 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:21,646 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:21,646 [ERROR] [!] HTTP error from ('127.0.0.1', 64676) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:21,647 [INFO] [+] New connection from ('127.0.0.1', 64677)
+2025-05-22 08:55:21,660 [INFO] [>] HTTP Request from ('127.0.0.1', 64677) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:21,660 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:21,660 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:21,660 [ERROR] [!] HTTP error from ('127.0.0.1', 64677) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:21,662 [INFO] [+] New connection from ('127.0.0.1', 64678)
+2025-05-22 08:55:21,676 [INFO] [>] HTTP Request from ('127.0.0.1', 64678) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:21,676 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:21,676 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:21,676 [ERROR] [!] HTTP error from ('127.0.0.1', 64678) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,032 [INFO] [+] New connection from ('127.0.0.1', 64673)
+2025-05-22 08:55:22,033 [INFO] [+] New connection from ('127.0.0.1', 64674)
+2025-05-22 08:55:22,033 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64673): CONNECT 149.154.167.91:443 HTTP/1.1
+2025-05-22 08:55:22,034 [INFO] [>] HTTP Request from ('127.0.0.1', 64674) to 149.154.167.91:80:80 for POST http://149.154.167.91:80/api HTTP/1.1
+2025-05-22 08:55:22,034 [INFO] Cache miss for key: http://149.154.167.91/api
+2025-05-22 08:55:22,034 [INFO] [Cache MISS] http://149.154.167.91/api
+2025-05-22 08:55:22,034 [ERROR] [!] HTTP error from ('127.0.0.1', 64674) to 149.154.167.91:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,036 [INFO] [+] New connection from ('127.0.0.1', 64680)
+2025-05-22 08:55:22,049 [INFO] [>] HTTP Request from ('127.0.0.1', 64680) to 149.154.167.91:80:80 for POST http://149.154.167.91:80/api HTTP/1.1
+2025-05-22 08:55:22,049 [INFO] Cache miss for key: http://149.154.167.91/api
+2025-05-22 08:55:22,049 [INFO] [Cache MISS] http://149.154.167.91/api
+2025-05-22 08:55:22,049 [ERROR] [!] HTTP error from ('127.0.0.1', 64680) to 149.154.167.91:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,051 [INFO] [+] New connection from ('127.0.0.1', 64681)
+2025-05-22 08:55:22,063 [INFO] [>] HTTP Request from ('127.0.0.1', 64681) to 149.154.167.91:80:80 for POST http://149.154.167.91:80/api HTTP/1.1
+2025-05-22 08:55:22,063 [INFO] Cache miss for key: http://149.154.167.91/api
+2025-05-22 08:55:22,063 [INFO] [Cache MISS] http://149.154.167.91/api
+2025-05-22 08:55:22,064 [ERROR] [!] HTTP error from ('127.0.0.1', 64681) to 149.154.167.91:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,065 [INFO] [+] New connection from ('127.0.0.1', 64682)
+2025-05-22 08:55:22,079 [INFO] [>] HTTP Request from ('127.0.0.1', 64682) to 149.154.167.91:80:80 for POST http://149.154.167.91:80/api HTTP/1.1
+2025-05-22 08:55:22,079 [INFO] Cache miss for key: http://149.154.167.91/api
+2025-05-22 08:55:22,079 [INFO] [Cache MISS] http://149.154.167.91/api
+2025-05-22 08:55:22,079 [ERROR] [!] HTTP error from ('127.0.0.1', 64682) to 149.154.167.91:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,519 [INFO] [+] New connection from ('127.0.0.1', 64683)
+2025-05-22 08:55:22,541 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64683): CONNECT 91.108.56.129:443 HTTP/1.1
+2025-05-22 08:55:22,541 [INFO] [+] New connection from ('127.0.0.1', 64685)
+2025-05-22 08:55:22,556 [INFO] [>] HTTP Request from ('127.0.0.1', 64685) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:22,556 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:22,556 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:22,557 [ERROR] [!] HTTP error from ('127.0.0.1', 64685) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,558 [INFO] [+] New connection from ('127.0.0.1', 64687)
+2025-05-22 08:55:22,571 [INFO] [>] HTTP Request from ('127.0.0.1', 64687) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:22,571 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:22,571 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:22,572 [ERROR] [!] HTTP error from ('127.0.0.1', 64687) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,573 [INFO] [+] New connection from ('127.0.0.1', 64688)
+2025-05-22 08:55:22,586 [INFO] [>] HTTP Request from ('127.0.0.1', 64688) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:22,588 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:22,588 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:22,588 [ERROR] [!] HTTP error from ('127.0.0.1', 64688) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:22,589 [INFO] [+] New connection from ('127.0.0.1', 64689)
+2025-05-22 08:55:22,603 [INFO] [>] HTTP Request from ('127.0.0.1', 64689) to 91.108.56.129:80:80 for POST http://91.108.56.129:80/api HTTP/1.1
+2025-05-22 08:55:22,603 [INFO] Cache miss for key: http://91.108.56.129/api
+2025-05-22 08:55:22,603 [INFO] [Cache MISS] http://91.108.56.129/api
+2025-05-22 08:55:22,603 [ERROR] [!] HTTP error from ('127.0.0.1', 64689) to 91.108.56.129:80: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "d:\Multi Threaded Proxy Server\handler.py", line 89, in handle_http
+    with socket.create_connection((dest_host, dest_port), timeout=5) as server_socket:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-05-22 08:55:36,453 [INFO] [+] New connection from ('127.0.0.1', 64690)
+2025-05-22 08:55:36,453 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64690): CONNECT dc.services.visualstudio.com:443 HTTP/1.1
+2025-05-22 08:55:44,379 [INFO] [+] New connection from ('127.0.0.1', 64692)
+2025-05-22 08:55:44,379 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64692): CONNECT mtalk.google.com:5228 HTTP/1.1
+2025-05-22 08:55:47,221 [INFO] [+] New connection from ('127.0.0.1', 64694)
+2025-05-22 08:55:47,222 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64694): CONNECT play.googleapis.com:443 HTTP/1.0
+2025-05-22 08:55:51,586 [INFO] [+] New connection from ('127.0.0.1', 64696)
+2025-05-22 08:55:51,587 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64696): CONNECT httparchive.org:443 HTTP/1.1
+2025-05-22 08:55:51,953 [INFO] [+] New connection from ('127.0.0.1', 64698)
+2025-05-22 08:55:51,954 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64698): CONNECT main.vscode-cdn.net:443 HTTP/1.1
+2025-05-22 08:55:52,021 [INFO] [+] New connection from ('127.0.0.1', 64699)
+2025-05-22 08:55:52,149 [INFO] [+] New connection from ('127.0.0.1', 64701)
+2025-05-22 08:55:52,149 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64701): CONNECT spclient.wg.spotify.com:443 HTTP/1.1
+2025-05-22 08:55:52,243 [INFO] [+] New connection from ('127.0.0.1', 64703)
+2025-05-22 08:55:52,253 [INFO] [+] New connection from ('127.0.0.1', 64704)
+2025-05-22 08:55:52,253 [INFO] [Blocked] Attempted access to httpbin.org
+2025-05-22 08:55:52,253 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64704): CONNECT google-ohttp-relay-safebrowsing.fastly-edge.com:443 HTTP/1.1
+2025-05-22 08:55:52,280 [INFO] [>] HTTP Request from ('127.0.0.1', 64703) to httpbin.org:80 for GET http://httpbin.org/favicon.ico HTTP/1.1
+2025-05-22 08:55:52,281 [INFO] Cache miss for key: http://httpbin.org/favicon.ico
+2025-05-22 08:55:52,281 [INFO] [Cache MISS] http://httpbin.org/favicon.ico
+2025-05-22 08:55:52,564 [INFO] [+] New connection from ('127.0.0.1', 64707)
+2025-05-22 08:55:52,565 [INFO] [>] HTTP Request from ('127.0.0.1', 64707) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=381269795&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=812788921&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:55:52,565 [INFO] Cache miss for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:55:52,565 [INFO] [Cache MISS] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:55:56,506 [INFO] [+] New connection from ('127.0.0.1', 64709)
+2025-05-22 08:55:56,736 [INFO] [+] New connection from ('127.0.0.1', 64710)
+2025-05-22 08:55:56,737 [INFO] [+] New connection from ('127.0.0.1', 64711)
+2025-05-22 08:55:56,737 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64711): CONNECT cdnjs.cloudflare.com:443 HTTP/1.1
+2025-05-22 08:55:57,790 [WARNING] [!] Timeout while reading from www.google-analytics.com
+2025-05-22 08:55:57,791 [INFO] Setting cache for key: http://www.google-analytics.com/__utm.gif with value: b'HTTP/1.1 200 OK\r\nAccess-Control-Allow-Origin: *\r\nPragma: no-cache\r\nX-Content-Type-Options: nosniff\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy-Report-Only: script-src \'none\'; form-action \'none\'; frame-src \'none\'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsgac:163:0\r\nCross-Origin-Opener-Policy-Report-Only: same-origin; report-to=ascnsrsgac:163:0\r\nReport-To: {"group":"ascnsrsgac:163:0","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsgac:163:0"}],}\r\nServer: Golfe2\r\nContent-Length: 35\r\nDate: Wed, 21 May 2025 16:27:16 GMT\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAge: 39578\r\nLast-Modified: Sun, 17 May 1998 03:00:00 GMT\r\nContent-Type: image/gif\r\n\r\nGIF89a\x01\x00\x01\x00\x80\xff\x00\xff\xff\xff\x00\x00\x00,\x00\x00\x00\x00\x01\x00\x01\x00\x00\x02\x02D\x01\x00;'
+2025-05-22 08:55:57,792 [INFO] [Status Code] HTTP/1.1 200 OK
+2025-05-22 08:55:57,792 [INFO] [Response] http://www.google-analytics.com/__utm.gif | Method: GET | Duration: 5.23s
+2025-05-22 08:55:57,794 [INFO] [+] New connection from ('127.0.0.1', 64713)
+2025-05-22 08:55:57,794 [INFO] [>] HTTP Request from ('127.0.0.1', 64713) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=1768724&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=327383656&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:55:57,794 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:55:57,795 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:55:57,796 [INFO] [+] New connection from ('127.0.0.1', 64714)
+2025-05-22 08:55:57,796 [INFO] [>] HTTP Request from ('127.0.0.1', 64714) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=277789576&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=859252005&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:55:57,796 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:55:57,797 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:55:57,992 [WARNING] [!] Timeout while reading from httpbin.org
+2025-05-22 08:55:57,992 [INFO] Setting cache for key: http://httpbin.org/favicon.ico with value: b'HTTP/1.1 404 NOT FOUND\r\nDate: Thu, 22 May 2025 03:26:54 GMT\r\nContent-Type: text/html\r\nContent-Length: 233\r\nConnection: keep-alive\r\nServer: gunicorn/19.9.0\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Credentials: true\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>\n'
+2025-05-22 08:55:57,994 [INFO] [Status Code] HTTP/1.1 404 NOT FOUND
+2025-05-22 08:55:57,994 [INFO] [Response] http://httpbin.org/favicon.ico | Method: GET | Duration: 5.71s
+2025-05-22 08:55:58,715 [INFO] [+] New connection from ('127.0.0.1', 64715)
+2025-05-22 08:55:58,715 [INFO] [>] HTTP Request from ('127.0.0.1', 64715) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=431503944&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=97798805&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:55:58,717 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:55:58,717 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:05,085 [INFO] [+] New connection from ('127.0.0.1', 64716)
+2025-05-22 08:56:05,086 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64716): CONNECT mobile.events.data.microsoft.com:443 HTTP/1.1
+2025-05-22 08:56:13,221 [INFO] [+] New connection from ('127.0.0.1', 64718)
+2025-05-22 08:56:13,222 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64718): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-22 08:56:16,473 [INFO] [+] New connection from ('127.0.0.1', 64720)
+2025-05-22 08:56:16,473 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64720): CONNECT discord.com:443 HTTP/1.1
+2025-05-22 08:56:23,734 [INFO] [+] New connection from ('127.0.0.1', 64723)
+2025-05-22 08:56:23,734 [INFO] [>] HTTP Request from ('127.0.0.1', 64723) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=423163699&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=257936438&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:56:23,736 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:23,736 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:25,437 [INFO] [+] New connection from ('127.0.0.1', 64724)
+2025-05-22 08:56:25,668 [INFO] [+] New connection from ('127.0.0.1', 64725)
+2025-05-22 08:56:25,676 [INFO] [+] New connection from ('127.0.0.1', 64726)
+2025-05-22 08:56:25,677 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64726): CONNECT threat.api.mcafee.com:443 HTTP/1.1
+2025-05-22 08:56:27,827 [INFO] [+] New connection from ('127.0.0.1', 64728)
+2025-05-22 08:56:27,828 [INFO] [>] HTTP Request from ('127.0.0.1', 64728) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=232399989&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=513756852&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:56:27,828 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:27,828 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:33,136 [INFO] [+] New connection from ('127.0.0.1', 64729)
+2025-05-22 08:56:33,137 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64729): CONNECT v10.events.data.microsoft.com:443 HTTP/1.1
+2025-05-22 08:56:49,813 [INFO] [+] New connection from ('127.0.0.1', 64733)
+2025-05-22 08:56:50,048 [INFO] [+] New connection from ('127.0.0.1', 64734)
+2025-05-22 08:56:50,071 [INFO] [+] New connection from ('127.0.0.1', 64735)
+2025-05-22 08:56:50,072 [INFO] [+] New connection from ('127.0.0.1', 64736)
+2025-05-22 08:56:50,079 [INFO] [+] New connection from ('127.0.0.1', 64737)
+2025-05-22 08:56:50,079 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64737): CONNECT serenetranscendentgoodkiss.neverssl.com:443 HTTP/1.1
+2025-05-22 08:56:50,319 [INFO] [+] New connection from ('127.0.0.1', 64738)
+2025-05-22 08:56:50,320 [INFO] [>] HTTP Request from ('127.0.0.1', 64738) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=443164218&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=737954747&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:56:50,320 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:50,321 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:51,848 [INFO] [+] New connection from ('127.0.0.1', 64740)
+2025-05-22 08:56:51,848 [INFO] [>] HTTP Request from ('127.0.0.1', 64740) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=276320241&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=961858277&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:56:51,849 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:51,849 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:56:53,088 [INFO] [>] HTTP Request from ('127.0.0.1', 64735) to serenetranscendentgoodkiss.neverssl.com:80 for GET http://serenetranscendentgoodkiss.neverssl.com/online HTTP/1.1
+2025-05-22 08:56:53,089 [INFO] Cache miss for key: http://serenetranscendentgoodkiss.neverssl.com/online
+2025-05-22 08:56:53,089 [INFO] [Cache MISS] http://serenetranscendentgoodkiss.neverssl.com/online
+2025-05-22 08:56:55,615 [INFO] [+] New connection from ('127.0.0.1', 64742)
+2025-05-22 08:56:55,615 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64742): CONNECT array621.prod.do.dsp.mp.microsoft.com:443 HTTP/1.1
+2025-05-22 08:56:59,022 [WARNING] [!] Timeout while reading from serenetranscendentgoodkiss.neverssl.com
+2025-05-22 08:56:59,022 [INFO] Setting cache for key: http://serenetranscendentgoodkiss.neverssl.com/online with value: b'HTTP/1.1 301 Moved Permanently\r\nDate: Thu, 22 May 2025 03:27:55 GMT\r\nServer: Apache/2.4.62 ()\r\nLocation: http://serenetranscendentgoodkiss.neverssl.com/online/\r\nContent-Length: 262\r\nContent-Type: text/html; charset=iso-8859-1\r\n\r\n<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href="http://serenetranscendentgoodkiss.neverssl.com/online/">here</a>.</p>\n</body></html>\n'
+2025-05-22 08:56:59,024 [INFO] [Status Code] HTTP/1.1 301 Moved Permanently
+2025-05-22 08:56:59,024 [INFO] [Response] http://serenetranscendentgoodkiss.neverssl.com/online | Method: GET | Duration: 5.94s
+2025-05-22 08:56:59,026 [INFO] [>] HTTP Request from ('127.0.0.1', 64736) to serenetranscendentgoodkiss.neverssl.com:80 for GET http://serenetranscendentgoodkiss.neverssl.com/online/ HTTP/1.1
+2025-05-22 08:56:59,026 [INFO] Cache miss for key: http://serenetranscendentgoodkiss.neverssl.com/online/
+2025-05-22 08:56:59,026 [INFO] [Cache MISS] http://serenetranscendentgoodkiss.neverssl.com/online/
+2025-05-22 08:57:04,498 [INFO] [+] New connection from ('127.0.0.1', 64749)
+2025-05-22 08:57:04,498 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64749): CONNECT activity.windows.com:443 HTTP/1.1
+2025-05-22 08:57:08,113 [INFO] Setting cache for key: http://serenetranscendentgoodkiss.neverssl.com/online/ with value: b'HTTP/1.1 200 OK\r\nDate: Thu, 22 May 2025 03:28:05 GMT\r\nServer: Apache/2.4.62 ()\r\nUpgrade: h2,h2c\r\nConnection: Upgrade\r\nLast-Modified: Wed, 29 Jun 2022 00:23:22 GMT\r\nETag: "8be-5e28b29291e10-gzip"\r\nAccept-Ranges: bytes\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nContent-Length: 1173\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x03uVQo\xdb6\x10~\x96~\xc5\xcd{\xe8\x06X\xb2\xe3,i\xe3\xba\xde\xda\x0eY\x07\xb4\xc5\x00\x1b(\xf6T\x9c$J\xe2L\x91\x02IEU\x87\xfd\xf7\xddQ\x92\xe3\xac\x98\x81@\x14y\xfc\xee\xee\xbb\xefN\xd9\xd5\xbeQ\xfb8\xda\xd5\x02\x0bzF;/\xbd\x12\xfb\x8f\xe2A\xd8\xc3\xe1=$P\x0b\xd5J]\xc1`:\xa8\x84\x07\xa3\x95\xd4b\xb7\x1a\rc\xbe\xe3\xfc\xc0\xcb(\xcaL1\xc0\xdf\xb4\x88J\xa3}Rb#\xd5\xb0\x85\x0f\xf4\xe2\x84\xb5\xe8\x97\x0c\xf7 \xbc\xccq\th%\xaa%8\xd4.\xa1cY\xbe\x84\xf3U\'\xbf\x8a-\\\xdd~y\xc9[\xb9Q\xc6n\xe1\xfb\x9f\xc2/l5h+\xa9\xb7\xb0\xe6\xb7\x7f\xe8\xaf\xde\\x\xee\x85\xacj\xbf\x85\xe7\xebp\xfe\x043\xbd\x15\xcd\x05D\xe2M\xbb\x85\xebu\xfbeFjG N3\xa9\'\xa0\xf3-6Hs\x82C:\xb6\xa3e\x83_\x92^\x16\xbe\xde\xc2\xed\xcd\x04t\x0epC\x1b\x80\x9d7\x8f\xabp\xdebQ\x10\xaf\x89\x12%\xe3\xdfL\xd7\xe6m;\xf9\xa5\xfd\xd9+\xd7hv\x99a~\xaa\xac\xe9t\x91\x9c\xc9\xd9\xbc]\xdf\xff\xfa\x84\xaf\xfb\xf0\xbb\xc4%D\x8eb==\xfeK\xce&\xdd<\xa6\xb9\xfb.I\xe0\xed\xe1\x00\xa55\r|@{\x82O"s\x9eb\xa8\xbdo\xddv\xb5\xaa\xa4\xf3i%}\xddeDJ\xb3\xa2\xa4Oy?\x1a\xad\xee\xb2\xa2\xbc^\xdf\xde\xdc\xe4Eq\xb3y~\x97aqu}ww\x8d\xf9\x8b\xe7\xf9\x8b\x9b\x02\x92$Hn5\xebg\xb7\x9ad\xb8c!\xb1\xb6v\x85|\x80\\\xa1s\xaf\x16c\xfa\x8bp\xe5b\xfb\\\x8b\xf1\xa4\xbe:\x8b\x97\xe0\xaeF\x07d\x1e\xe0\xc7g\xfc\xcd}\xa1=\xdf\xfe?X\xee\x8f\xcd\xfeS\x8d\xfeg\xc2\xdc\xb0e\xbb?\xd6\xd2\x01\xa7*\xbd\x00Z\x96\xc6B_\x0b\x1d\x1a\xc5\xdb\x01\xa8\xe2\xa6\xa5\xf7{\xccEf\xcci\t\xbf\x19S)\xb1\x84\xd7\r~5z\t\xc2\xe7qd4 \xf4\xb2\x94\xa0\x85\xef\x8d%;\xd4\x05h\xe3kn\xbb\x1a[\x02q)\x1c\x87V\xc0\x82\x89\'\xde5\xa7\xe8\x9cb\xd2\x17q$59#\xbf\x162kz\xea\xa5g\x0e:\xab C;\xa2\xd1\xd93E\xef\x020S\x82CS\xa6\xa2VNw\xabv\xce\xef\x9d\xe9/\xd2\xbb\xf4@\xe1\xd1\xe5\xb0\x03\x9d\x13\xc0\x83\xe1\x07T\xce\xc0I\x9b\x9e\xe2wp|\x7f\xf81\x85\x8f&\x8e\x84\xce\xed\xd0z\xc9\tj\x03\xce[Ci\x90\xec\x89\x1b\xee\xfb\xf3\xc9\x0e\xe3\xa8\xb6\xa2|\xb5\x98\xd5$t\xda\xcb\x93lE!15\xb6Z\xf1\xdb\xea\xdd\xf1\xf8\xc7\xe7\x83\xb72\xf7\x9f\x8f\x96\x86Ek\xac\xff|\x10yg\xa5\x1f\x16\xfbw\x87\xe3a\xb7\xc2\xfd2\x8e\x08\x95\xadW\x9bt\xbd\x84\xbf:\xe7\xa1UTD0\xaa\x80NO\x91\x89"\x18\x05^\xa8h!+\xe7\xbb\xfc\x04dIQBA"\x8e#\xac\x84\x03S\xd2&i\x99J\x03n\xf2\x188\x83\xb3(\x86\x0b\xd2>\x1a\xdb\xa0R\xc3\x92p\xd0S\x11\x90JP\x80,\x04\xa6\xf0\'\xe9\xc2\xd5\xa6\xa3XP\xf58\xb83\x97\x1cI@\x17\x97\xf4\x8djj\x8ds\x92j\x96\xc2\xef\x1aJ\xcci\x84JFv]^_\xc0\x07\x87\xd0\x18Jy\xd2\xa4\xa3\x14\xac \xa2{\xf2\x13\x94\xc4,C6@!J\xec\x94\x1fk\x1f\x85\xc0_S\x04S\xc8\x95\x15<\xa7\xb3\xce\x93#\x08Un\x04\xb1>z\x90e\xd0\x12\x01[\xa1\x06\x865:\x8eZc\xac\x1a\x92L\xd4\xf8@\xf4^\xaa\xd9q\xbc\x90\xa3f\xf1\xd5h\x0b\x16\xdf\xe3w$\x058L\x99O\xd2u\x81\x8e9\x89\'\xb17x\x12\x8c&\x9b\x99\x95\xd0u\xbe6D$;%\x05L^\xd9\x8b\x13\xa3\xf2y\x8d,xV\x82\x85\x16\x87\x86\xa4H\xcf\x8a\xdc\xbfAG\xa2\x9cj\xc683B\x1cQ\xd0\xcf<xl\xe1\xb1\xbfh,h\x91\x87\xf2\x04})I!\xa1\xf74\x8e9\xf4p%\xa5\x0f\x1eM*=7\xe3T\t"\xb22f\xe4\x99u6\x04V\xachD\x93\x89iv\xe0y\xa2\xb8\xaee\x9d;\xb8\x10\x04\x11C\x02y \xbb\xb1\x0c\xe0y&L\xaa\x9d/jl\xc42\xe0s\xc7\xb3\xc4\x02y\x8f\xaa\x1d\xabM\x08|k\xcavjnK\x9dg)=7\xd3\xe6y\xc81QK\xc2\'8\x1cO(\xf08r\x82v\'1\xd0\xb4\x82F\xbaP\xab\x86\x94y\x9e+\x08O[\xdc\xf7\xd2S?\x85\x8f\xc5<b\x16\xfb{\xa3\x14\xe9\xf4\x97y\x87\xdb9\x8e\xbf\x19\xdc\xbb\xd5\xf8]\xa0\x86\x0b\xff\xb6\xfc\x0b\x05yD\xe5\xbe\x08\x00\x00'
+2025-05-22 08:57:08,115 [INFO] [Status Code] HTTP/1.1 200 OK
+2025-05-22 08:57:08,115 [INFO] [Response] http://serenetranscendentgoodkiss.neverssl.com/online/ | Method: GET | Duration: 9.09s
+2025-05-22 08:57:08,116 [INFO] [+] New connection from ('127.0.0.1', 64751)
+2025-05-22 08:57:08,117 [INFO] [>] HTTP Request from ('127.0.0.1', 64751) to serenetranscendentgoodkiss.neverssl.com:80 for GET http://serenetranscendentgoodkiss.neverssl.com/favicon.ico HTTP/1.1
+2025-05-22 08:57:08,117 [INFO] Cache miss for key: http://serenetranscendentgoodkiss.neverssl.com/favicon.ico
+2025-05-22 08:57:08,117 [INFO] [Cache MISS] http://serenetranscendentgoodkiss.neverssl.com/favicon.ico
+2025-05-22 08:57:13,842 [INFO] Setting cache for key: http://serenetranscendentgoodkiss.neverssl.com/favicon.ico with value: b'HTTP/1.1 200 OK\r\nDate: Thu, 22 May 2025 03:28:10 GMT\r\nServer: Apache/2.4.62 ()\r\nUpgrade: h2,h2c\r\nConnection: Upgrade\r\nLast-Modified: Wed, 29 Jun 2022 00:26:43 GMT\r\nETag: "7c-5e28b351ffe27"\r\nAccept-Ranges: bytes\r\nContent-Length: 124\r\nContent-Type: image/vnd.microsoft.icon\r\n\r\n\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x010\x00\x00\x010\x01\x03\x00\x00\x00\n5\xbf\xb0\x00\x00\x00\x06PLTE\xff\xff\xffB\xc0\xfd.*\xd3?\x00\x00\x001IDATh\xde\xed\xca1\r\x00\x00\x08\x030\xfc\x9b\x06\x0b${v\xb4wg_4M\xd34M\xd34M\xd34M\xd3\xb4\xa8\x01\x00\x00\x00\x00\x00\x00\xf49\x04\x0f\x01\xee\x060\xdcP\x00\x00\x00\x00IEND\xaeB`\x82'
+2025-05-22 08:57:13,843 [INFO] [Status Code] HTTP/1.1 200 OK
+2025-05-22 08:57:13,843 [INFO] [Response] http://serenetranscendentgoodkiss.neverssl.com/favicon.ico | Method: GET | Duration: 5.73s
+2025-05-22 08:57:25,902 [INFO] [+] New connection from ('127.0.0.1', 64753)
+2025-05-22 08:57:25,903 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64753): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-22 08:57:26,345 [INFO] [+] New connection from ('127.0.0.1', 64755)
+2025-05-22 08:57:26,345 [INFO] [+] New connection from ('127.0.0.1', 64756)
+2025-05-22 08:57:26,345 [INFO] [+] New connection from ('127.0.0.1', 64757)
+2025-05-22 08:57:26,347 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 64757): CONNECT serenetranscendentgoodkiss.neverssl.com:443 HTTP/1.1
+2025-05-22 08:57:27,674 [INFO] [+] New connection from ('127.0.0.1', 64759)
+2025-05-22 08:57:27,675 [INFO] [>] HTTP Request from ('127.0.0.1', 64759) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=252902324&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=857507911&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:57:27,675 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:57:27,676 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-22 08:57:28,695 [INFO] [+] New connection from ('127.0.0.1', 64760)
+2025-05-22 08:57:28,696 [INFO] [>] HTTP Request from ('127.0.0.1', 64760) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=514596226&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=677404765&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747666580.1747716760.58%3B%2B__utmz%3D0.1747716760.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-22 08:57:28,696 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-22 08:57:28,696 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
