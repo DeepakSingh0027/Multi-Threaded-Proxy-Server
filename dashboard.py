@@ -12,14 +12,16 @@ from flask_socketio import SocketIO
 
 from config import CACHE_FILE
 
+
 app = Flask(__name__)
-socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
+
 
 # Global variable to hold the proxy server process instance
 proxy_process = None
 
 # Log file path for proxy logs
-LOG_FILE = "proxy.log"
+LOG_FILE = "proxy_dash.log"
 
 # Lists to store the latest logs and connection/block counts over time
 latest_logs = []
@@ -28,77 +30,102 @@ blocked_over_time = []
 
 def monitor_logs():
     """
-    Continuously monitor the proxy log file for new entries.
-    - Counts HTTP connections and blocked requests.
-    - Extracts timestamps for connections using updated timestamp regex.
-    - Keeps only the latest logs and data for frontend updates.
-    - Emits updates to frontend every 2 seconds via WebSocket.
+    Re-reads the entire proxy log file every 2 seconds.
+    Emits total connection and blocked counts over time, and latest 10 logs.
     """
-    last_position = 0  # Keep track of file read position to only read new lines
-
-    # Precompile regex patterns for efficiency
-    pattern_timestamp = re.compile(r'^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}),\d{3}')
     pattern_conn = re.compile(r'New connection from')
     pattern_block = re.compile(r'\[Blocked\] Attempted access to (\S+)')
+    pattern_block_https = re.compile(r'\[Blocked HTTPS\]')
+    pattern_error = re.compile(r'\[(ERROR|WARNING)\] \[!\]')
+    pattern_cache_hit = re.compile(r'\[Cache HIT\]')
+    pattern_cache_miss = re.compile(r'\[Cache MISS\]')
+
+    connection_count_over_time = []
+    blocked_count_over_time = []
+    cache_hit_over_time = []
+    cache_miss_over_time = []
+
+    print(f"[DEBUG] Monitoring entire log file: {LOG_FILE}")
 
     while True:
         if not os.path.exists(LOG_FILE):
-            # If log file doesn't exist yet, wait and retry
+            print("[DEBUG] Log file not found. Retrying...")
             time.sleep(1)
             continue
 
-        new_connections = 0
-        new_blocked = 0
+        try:
+            with open(LOG_FILE, "r") as f:
+                lines = f.readlines()
 
-        # Read new lines appended since last read
-        with open(LOG_FILE, "r") as f:
-            f.seek(last_position)
-            new_lines = f.readlines()
-            last_position = f.tell()
+            new_conn, new_block, new_hit, new_miss, latest_logs = parse_log_lines(
+                lines, pattern_conn, pattern_block, pattern_block_https, pattern_error,
+                pattern_cache_hit, pattern_cache_miss
+            )
 
-        for line in new_lines:
-            # Check if line matches connection pattern
-            if pattern_conn.search(line):
-                new_connections += 1
+            update_time_series(connection_count_over_time, new_conn)
+            update_time_series(blocked_count_over_time, new_block)
+            update_time_series(cache_hit_over_time, new_hit)
+            update_time_series(cache_miss_over_time, new_miss)
 
-                # Extract timestamp from beginning of line
-                timestamp_match = pattern_timestamp.match(line)
-                if timestamp_match:
-                    timestamp = timestamp_match.group(1)
-                    connections_over_time.append(timestamp)
-                    # Keep connection history capped to last 100 entries
-                    if len(connections_over_time) > 100:
-                        connections_over_time.pop(0)
+            socketio.emit("update", {
+                "connections": connection_count_over_time,
+                "blocked": blocked_count_over_time,
+                "cache_hits": cache_hit_over_time,
+                "cache_misses": cache_miss_over_time,
+                "latest_logs": latest_logs
+            }, namespace="/")
 
-                # Keep only last 10 logs for display
-                latest_logs.append(line.strip())
-                if len(latest_logs) > 10:
-                    latest_logs.pop(0)
+        except Exception as e:
+            print(f"[ERROR] Failed to read log: {e}")
 
-            # Check if line matches blocked pattern
-            elif pattern_block.search(line):
-                new_blocked += 1
+        time.sleep(1)  # Sleep for 2 seconds before re-reading the log
 
-        # Emit updated data to frontend clients via WebSocket
-        socketio.emit("update", {
-            "connections": len(connections_over_time),
-            "blocked": new_blocked,
-            "latest_logs": latest_logs[-10:]
-        }, namespace="/")
+# === parser ===
+def count_pattern(lines, pattern):
+    return sum(1 for line in lines if pattern.search(line.strip()))
 
-        time.sleep(2)
+def has_error(lines, pattern_error):
+    return any(pattern_error.search(line.strip()) for line in lines)
 
+def parse_log_lines(lines, pattern_conn, pattern_block, pattern_block_https, pattern_error, pattern_hit, pattern_miss):
+    """
+    Parse log lines and return:
+    - new connection count (or -1 if error)
+    - blocked count
+    - cache hit count
+    - cache miss count
+    - latest logs
+    """
+    stripped_lines = [line.strip() for line in lines if line.strip()]
+    new_conn = count_pattern(stripped_lines, pattern_conn)
+    new_block = count_pattern(stripped_lines, pattern_block) + count_pattern(stripped_lines, pattern_block_https)
+    new_hit = count_pattern(stripped_lines, pattern_hit)
+    new_miss = count_pattern(stripped_lines, pattern_miss)
+    found_error = has_error(stripped_lines, pattern_error)
+
+    if found_error:
+        new_conn = -1
+
+    latest_logs = [line.strip() for line in lines[-10:]]
+    return new_conn, new_block, new_hit, new_miss, latest_logs
+
+def update_time_series(series, value, max_length=30):
+    """
+    Append value to series and keep only the last max_length items.
+    """
+    series.append(value)
+    if len(series) > max_length:
+        series.pop(0)
 
 # Start log monitoring thread as a daemon
 log_thread = threading.Thread(target=monitor_logs, daemon=True)
 log_thread.start()
 
-
 @app.route("/live")
 def live_dashboard():
     """
     Serves a live dashboard showing:
-    - A real-time line chart of website connections and blocked requests.
+    - A real-time line chart of website connections, blocked requests, cache hits, and cache misses.
     - A table displaying the latest proxy log entries.
     Uses Socket.IO to receive live updates.
     """
@@ -119,7 +146,7 @@ def live_dashboard():
     </head>
     <body>
         <h1>Live Proxy Monitoring</h1>
-        <canvas id="connChart" width="600" height="200"></canvas>
+        <canvas id="connChart" width="800" height="250"></canvas>
 
         <h3>Latest Proxy Logs</h3>
         <table id="logTable">
@@ -129,9 +156,17 @@ def live_dashboard():
 
         <script>
             const socket = io();
+            socket.on("connect", () => {
+                console.log("Socket connected");
+            });
+
+            socket.on("disconnect", () => {
+                console.log("Socket disconnected");
+            });
+
             const ctx = document.getElementById('connChart').getContext('2d');
 
-            // Initialize Chart.js with two line datasets for connections and blocked requests
+            // Initialize Chart.js with four line datasets
             const chart = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -150,35 +185,74 @@ def live_dashboard():
                             borderColor: 'red',
                             fill: false,
                             tension: 0.1
+                        },
+                        {
+                            label: 'Cache Hits',
+                            data: [],
+                            borderColor: 'green',
+                            fill: false,
+                            tension: 0.1
+                        },
+                        {
+                            label: 'Cache Misses',
+                            data: [],
+                            borderColor: 'orange',
+                            fill: false,
+                            tension: 0.1
                         }
                     ]
                 },
                 options: {
                     responsive: true,
                     animation: false,
-                    scales: { y: { beginAtZero: true } }
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Time'
+                            },
+                            ticks: {
+                                autoSkip: true,
+                                maxTicksLimit: 10
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Count'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true
+                        }
+                    }
                 }
             });
 
             // Listen for 'update' events from server
             socket.on("update", data => {
+                console.log("Data received:", data);
                 const now = new Date().toLocaleTimeString();
 
-                // Add current time and data points to chart
-                chart.data.labels.push(now);
-                chart.data.datasets[0].data.push(data.connections);
-                chart.data.datasets[1].data.push(data.blocked);
+                // Update chart labels and datasets
+                chart.data.labels = Array.from({ length: data.connections.length }, (_, i) => i + 1);
+                chart.data.datasets[0].data = data.connections;
+                chart.data.datasets[1].data = data.blocked;
+                chart.data.datasets[2].data = data.cache_hits || [];
+                chart.data.datasets[3].data = data.cache_misses || [];
 
-                // Limit chart points to last 30 entries
-                if (chart.data.labels.length > 30) {
+                // Trim data if more than 30 points
+                if (chart.data.labels.length > 30){
                     chart.data.labels.shift();
-                    chart.data.datasets[0].data.shift();
-                    chart.data.datasets[1].data.shift();
+                    chart.data.datasets.forEach(ds => ds.data.shift());
                 }
 
                 chart.update();
 
-                // Update the log table with latest entries
+                // Update the log table
                 const tbody = document.querySelector("#logTable tbody");
                 tbody.innerHTML = "";
                 data.latest_logs.forEach(line => {
@@ -189,11 +263,13 @@ def live_dashboard():
                     tbody.appendChild(row);
                 });
             });
+            setInterval(function() {
+                location.reload();
+            }, 2000);
         </script>
     </body>
     </html>
     """)
-
 
 SETTINGS_FILE = "settings.json"
 
@@ -280,7 +356,6 @@ def manage_blacklist():
     </html>
     """
     return render_template_string(html_template, blacklist=blacklist)
-
 
 @app.route("/")
 def view_cache():
@@ -369,7 +444,6 @@ def view_cache():
     """
     return render_template_string(html_template, cache=cache, proxy_running=proxy_running)
 
-
 @app.route("/start")
 def start_proxy():
     """
@@ -383,7 +457,6 @@ def start_proxy():
         time.sleep(1)  # Give it a moment to start
 
     return redirect("/")
-
 
 @app.route("/stop")
 def stop_proxy():
@@ -399,7 +472,6 @@ def stop_proxy():
 
     return redirect("/")
 
-
 @app.route("/clearcache")
 def clear_cache():
     """
@@ -409,7 +481,6 @@ def clear_cache():
         pickle.dump({}, f)
 
     return redirect("/")
-
 
 if __name__ == "__main__":
     # Run Flask app with SocketIO support
