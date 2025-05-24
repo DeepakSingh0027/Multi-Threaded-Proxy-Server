@@ -14,7 +14,7 @@ patterns = [
 ]
 
 class DashLogHandler(logging.Handler):
-    def __init__(self, filename, max_logs=15):
+    def __init__(self, filename, max_logs=50):
         super().__init__()
         self.filename = filename
         self.max_logs = max_logs
@@ -46,7 +46,7 @@ logging.basicConfig(
 )
 
 # Create a separate handler for dashboard logs (filtered)
-dash_handler = DashLogHandler("proxy_dash.log", max_logs=15)
+dash_handler = DashLogHandler("proxy_dash.log", max_logs=50)
 dash_handler.setLevel(logging.INFO)
 dash_handler.setFormatter(logging.Formatter(log_format))
 

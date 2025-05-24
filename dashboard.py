@@ -20,6 +20,10 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 # Global variable to hold the proxy server process instance
 proxy_process = None
 
+monitor_thread = None
+monitor_thread_started = False
+monitor_lock = threading.Lock()
+
 # Log file path for proxy logs
 LOG_FILE = "proxy_dash.log"
 
@@ -67,18 +71,20 @@ def monitor_logs():
             update_time_series(cache_hit_over_time, new_hit)
             update_time_series(cache_miss_over_time, new_miss)
 
-            socketio.emit("update", {
+            data={
                 "connections": connection_count_over_time,
                 "blocked": blocked_count_over_time,
                 "cache_hits": cache_hit_over_time,
                 "cache_misses": cache_miss_over_time,
                 "latest_logs": latest_logs
-            }, namespace="/")
+            }
+
+            socketio.emit("update",data , namespace="/")
 
         except Exception as e:
             print(f"[ERROR] Failed to read log: {e}")
 
-        time.sleep(1)  # Sleep for 2 seconds before re-reading the log
+        # Sleep for 2 seconds before re-reading the log
 
 # === parser ===
 def count_pattern(lines, pattern):
@@ -106,6 +112,8 @@ def parse_log_lines(lines, pattern_conn, pattern_block, pattern_block_https, pat
     if found_error:
         new_conn = -1
 
+    if new_conn == -1:
+        new_conn = 0
     latest_logs = [line.strip() for line in lines[-10:]]
     return new_conn, new_block, new_hit, new_miss, latest_logs
 
@@ -117,10 +125,6 @@ def update_time_series(series, value, max_length=30):
     if len(series) > max_length:
         series.pop(0)
 
-# Start log monitoring thread as a daemon
-log_thread = threading.Thread(target=monitor_logs, daemon=True)
-log_thread.start()
-
 @app.route("/live")
 def live_dashboard():
     """
@@ -129,147 +133,212 @@ def live_dashboard():
     - A table displaying the latest proxy log entries.
     Uses Socket.IO to receive live updates.
     """
+    global monitor_thread, monitor_thread_started
+
+    # Start monitor_logs thread only if not already started
+    with monitor_lock:
+        if not monitor_thread_started:
+            monitor_thread = threading.Thread(target=monitor_logs, daemon=True)
+            monitor_thread.start()
+            monitor_thread_started = True
+
     return render_template_string("""
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Live Proxy Stats</title>
-        <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <style>
-            body { font-family: Arial; padding: 20px; }
-            canvas { max-width: 100%; }
-            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-            th, td { padding: 6px 12px; border: 1px solid #ccc; }
-            th { background: #f2f2f2; }
-        </style>
-    </head>
-    <body>
-        <h1>Live Proxy Monitoring</h1>
-        <canvas id="connChart" width="800" height="250"></canvas>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Live Proxy Monitoring</title>
+            <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Forum', cursive;
+                    background-color: #f5f7fa;
+                    margin: 0;
+                    padding: 40px;
+                }
 
-        <h3>Latest Proxy Logs</h3>
-        <table id="logTable">
-            <thead><tr><th>Log Entry</th></tr></thead>
-            <tbody></tbody>
-        </table>
+                .card {
+                    background-color: #fff;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                    margin-bottom: 30px;
+                    padding: 24px;
+                }
 
-        <script>
-            const socket = io();
-            socket.on("connect", () => {
-                console.log("Socket connected");
-            });
+                .card h2 {
+                    margin: 0 0 6px;
+                    font-size: 20px;
+                    color: #111827;
+                }
 
-            socket.on("disconnect", () => {
-                console.log("Socket disconnected");
-            });
+                .card p {
+                    margin: 0 0 20px;
+                    font-size: 14px;
+                    color: #6b7280;
+                }
 
-            const ctx = document.getElementById('connChart').getContext('2d');
+                canvas {
+                    width: 100% !important;
+                    height: 400px !important;
+                    max-height: 400px;
+                }
 
-            // Initialize Chart.js with four line datasets
-            const chart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: [],
-                    datasets: [
-                        {
-                            label: 'Website Connections',
-                            data: [],
-                            borderColor: 'blue',
-                            fill: false,
-                            tension: 0.1
-                        },
-                        {
-                            label: 'Blocked Requests',
-                            data: [],
-                            borderColor: 'red',
-                            fill: false,
-                            tension: 0.1
-                        },
-                        {
-                            label: 'Cache Hits',
-                            data: [],
-                            borderColor: 'green',
-                            fill: false,
-                            tension: 0.1
-                        },
-                        {
-                            label: 'Cache Misses',
-                            data: [],
-                            borderColor: 'orange',
-                            fill: false,
-                            tension: 0.1
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    animation: false,
-                    scales: {
-                        x: {
-                            title: {
-                                display: true,
-                                text: 'Time'
-                            },
-                            ticks: {
-                                autoSkip: true,
-                                maxTicksLimit: 10
-                            }
-                        },
-                        y: {
-                            beginAtZero: true,
-                            title: {
-                                display: true,
-                                text: 'Count'
-                            }
-                        }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background: #f9fafb;
+                    margin-top: 10px;
+                }
+
+                th, td {
+                    text-align: left;
+                    padding: 10px 12px;
+                    border-bottom: 1px solid #e5e7eb;
+                    font-size: 14px;
+                }
+
+                th {
+                    background-color: #f3f4f6;
+                    font-weight: 600;
+                    color: #374151;
+                }
+
+                .log-row {
+                    background-color: #fff;
+                }
+
+                .log-row:nth-child(even) {
+                    background-color: #f9fafb;
+                }
+
+                #logTable tbody {
+                    display: block;
+                    max-height: 250px;
+                    overflow-y: auto;
+                }
+
+                #logTable thead, #logTable tbody tr {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+            </style>
+        </head>
+        <body>
+            <h1 style="text-align:center; margin-bottom: 2rem;">Server Live Dashboard</h1>
+
+            <div class="card">
+                <h2>Connection Statistics</h2>
+                <p>Total connections and blocked requests over time</p>
+                <canvas id="connChart"></canvas>
+            </div>
+
+            <div class="card">
+                <h2>Server Logs</h2>
+                <p>Latest 10 server activity logs</p>
+                <table id="logTable">
+                    <thead><tr><th>Log Entry</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <script>
+                const socket = io();
+                const maxDataPoints = 30;
+                let lastData = {
+                    connections: [],
+                    blocked: [],
+                    cache_hits: [],
+                    cache_misses: [],
+                    latest_logs: []
+                };
+
+                socket.on("connect", () => {
+                    console.log("Socket connected");
+                });
+
+                socket.on("disconnect", () => {
+                    console.log("Socket disconnected");
+                });
+
+                const ctx = document.getElementById('connChart').getContext('2d');
+
+                const chart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [
+                            { label: 'Website Connections', data: [], borderColor: '#3b82f6', fill: false, tension: 0.3 },
+                            { label: 'Blocked Requests', data: [], borderColor: '#ef4444', fill: false, tension: 0.3 },
+                            { label: 'Cache Hits', data: [], borderColor: '#10b981', fill: false, tension: 0.3 },
+                            { label: 'Cache Misses', data: [], borderColor: '#f59e0b', fill: false, tension: 0.3 }
+                        ]
                     },
-                    plugins: {
-                        legend: {
-                            display: true
+                    options: {
+                        responsive: true,
+                        animation: false,
+                        scales: {
+                            x: {
+                                title: { display: true, text: 'Time (Update Points)' },
+                                ticks: { autoSkip: true, maxTicksLimit: 10 }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                title: { display: true, text: 'Count' }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: true }
                         }
                     }
-                }
-            });
-
-            // Listen for 'update' events from server
-            socket.on("update", data => {
-                console.log("Data received:", data);
-                const now = new Date().toLocaleTimeString();
-
-                // Update chart labels and datasets
-                chart.data.labels = Array.from({ length: data.connections.length }, (_, i) => i + 1);
-                chart.data.datasets[0].data = data.connections;
-                chart.data.datasets[1].data = data.blocked;
-                chart.data.datasets[2].data = data.cache_hits || [];
-                chart.data.datasets[3].data = data.cache_misses || [];
-
-                // Trim data if more than 30 points
-                if (chart.data.labels.length > 30){
-                    chart.data.labels.shift();
-                    chart.data.datasets.forEach(ds => ds.data.shift());
-                }
-
-                chart.update();
-
-                // Update the log table
-                const tbody = document.querySelector("#logTable tbody");
-                tbody.innerHTML = "";
-                data.latest_logs.forEach(line => {
-                    const row = document.createElement("tr");
-                    const cell = document.createElement("td");
-                    cell.textContent = line;
-                    row.appendChild(cell);
-                    tbody.appendChild(row);
                 });
-            });
-            setInterval(function() {
-                location.reload();
-            }, 2000);
-        </script>
-    </body>
-    </html>
-    """)
+
+                socket.on("update", data => {
+                    lastData = {
+                        connections: data.connections || [],
+                        blocked: data.blocked || [],
+                        cache_hits: data.cache_hits || [],
+                        cache_misses: data.cache_misses || [],
+                        latest_logs: data.latest_logs || []
+                    };
+                });
+
+                setInterval(() => {
+                    const label = new Date().toLocaleTimeString();
+                    chart.data.labels.push(label);
+                    if (chart.data.labels.length > maxDataPoints) {
+                        chart.data.labels.shift();
+                    }
+
+                    const pushTrim = (datasetIndex, newValue) => {
+                        const ds = chart.data.datasets[datasetIndex];
+                        ds.data.push(newValue);
+                        if (ds.data.length > maxDataPoints) ds.data.shift();
+                    };
+
+                    pushTrim(0, lastData.connections.at(-1) || 0);
+                    pushTrim(1, lastData.blocked.at(-1) || 0);
+                    pushTrim(2, lastData.cache_hits.at(-1) || 0);
+                    pushTrim(3, lastData.cache_misses.at(-1) || 0);
+
+                    chart.update();
+
+                    const tbody = document.querySelector("#logTable tbody");
+                    tbody.innerHTML = "";
+                    lastData.latest_logs.forEach(line => {
+                        const row = document.createElement("tr");
+                        row.classList.add("log-row");
+                        const cell = document.createElement("td");
+                        cell.textContent = line;
+                        row.appendChild(cell);
+                        tbody.appendChild(row);
+                    });
+                }, 2000);
+            </script>
+        </body>
+        </html>
+        """)
 
 SETTINGS_FILE = "settings.json"
 
@@ -287,16 +356,21 @@ def save_settings(data):
     with open(SETTINGS_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
-@app.route("/blacklist", methods=["GET", "POST"])
-def manage_blacklist():
+@app.route("/", methods=["GET", "POST"])
+def dashboard():
     """
-    Display and manage the blacklist of blocked sites.
-    Allows adding and removing sites from blacklist via POST form submissions.
-    On update, restarts the proxy server if running.
+    Combined dashboard:
+    - Manage blacklist (add/remove sites)
+    - View proxy cache
+    - Proxy server controls and links
     """
+    global proxy_process
+
+    # Load settings and blacklist
     settings = load_settings()
     blacklist = settings.get("blacklist", [])
 
+    # Handle blacklist updates if POST
     if request.method == "POST":
         action = request.form.get("action")
         site = request.form.get("site", "").strip()
@@ -306,68 +380,18 @@ def manage_blacklist():
         elif action == "remove" and site in blacklist:
             blacklist.remove(site)
 
-        # Save updated blacklist to settings
         settings["blacklist"] = blacklist
         save_settings(settings)
 
-        # Restart proxy process if it's running to apply changes
-        global proxy_process
+        # Restart proxy to apply blacklist changes if running
         if proxy_process and proxy_process.poll() is None:
             proxy_process.terminate()
             proxy_process.wait()
             proxy_process = subprocess.Popen(["python", "main.py"])
 
-        return redirect("/blacklist")
+        return redirect("/")  # Redirect to GET after POST
 
-    # Render the blacklist management form and current list
-    html_template = """
-    <!doctype html>
-    <html lang="en">
-    <head>
-        <title>Manage Blacklist</title>
-        <style>
-            body { font-family: Arial; padding: 20px; }
-            input[type="text"] { padding: 5px; width: 300px; }
-            button { padding: 6px 12px; margin-left: 5px; }
-            ul { list-style: none; padding: 0; }
-            li { margin-bottom: 5px; }
-        </style>
-    </head>
-    <body>
-        <h1>Blacklist Management</h1>
-        <form method="POST">
-            <input type="text" name="site" placeholder="example.com" required>
-            <button type="submit" name="action" value="add">Add</button>
-        </form>
-        <h3>Current Blacklist:</h3>
-        <ul>
-            {% for site in blacklist %}
-            <li>
-                {{ site }}
-                <form method="POST" style="display:inline;">
-                    <input type="hidden" name="site" value="{{ site }}">
-                    <button type="submit" name="action" value="remove">Remove</button>
-                </form>
-            </li>
-            {% endfor %}
-        </ul>
-        <a href="/">← Back to Dashboard</a>
-    </body>
-    </html>
-    """
-    return render_template_string(html_template, blacklist=blacklist)
-
-@app.route("/")
-def view_cache():
-    """
-    Dashboard for viewing the current proxy cache.
-    Shows cached URL keys and response sizes.
-    Also provides controls to start/stop the proxy server,
-    clear cache, and navigate to blacklist and live stats.
-    """
-    global proxy_process
-
-    # Load cache data from pickle file if available, else empty dict
+    # Load cache data
     if not os.path.exists(CACHE_FILE):
         cache = {}
     else:
@@ -377,72 +401,261 @@ def view_cache():
         except Exception:
             cache = {}
 
-    # Check if the proxy process is running
     proxy_running = proxy_process is not None and proxy_process.poll() is None
 
+    # Combined HTML template with blacklist first, then cache
     html_template = """
     <!doctype html>
     <html lang="en">
     <head>
-        <title>Proxy Cache Dashboard</title>
-        <style>
-            body { font-family: Arial; padding: 20px; }
-            table { border-collapse: collapse; width: 100%; margin-top: 10px; }
-            th, td { padding: 8px 12px; border: 1px solid #ddd; }
-            th { background-color: #f2f2f2; }
-            .clear-btn, .control-btn {
-                padding: 8px 16px;
-                color: white;
-                text-decoration: none;
-                border-radius: 4px;
-                margin-right: 10px;
-                display: inline-block;
-            }
-            .clear-btn { background: #d9534f; }
-            .start-btn { background: #5cb85c; }
-            .stop-btn { background: #f0ad4e; }
-            .disabled { background: #ccc; pointer-events: none; }
-        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <title>Proxy Dashboard</title>
+    <style>
+        body {
+        font-family: 'Forum', cursive;
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #f9fafb;
+        color: #333;
+        }
+        h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        }
+        h2 {
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 0.25rem;
+        }
+        form.flex {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        }
+        input[type="text"] {
+        flex-grow: 1;
+        padding: 0.5rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.375rem;
+        font-size: 1rem;
+        }
+        button {
+        padding: 0.5rem 1rem;
+        background-color: #000000;
+        border: none;
+        border-radius: 0.375rem;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+        button:hover {
+        background-color: #808080;
+        }
+        .blacklist-container, .cache-container {
+        background: white;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+        }
+        .blacklist-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f4f6;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        margin-bottom: 0.5rem;
+        }
+        .blacklist-item span {
+        font-weight: 500;
+        font-size: 0.95rem;
+        }
+        .blacklist-item button {
+        background: transparent;
+        color: #000000;
+        border: none;
+        cursor: pointer;
+        padding: 0.25rem 1rem;
+        border-radius: 0.375rem;
+        transition: background-color 0.2s ease;
+        }
+        .blacklist-item button:hover {
+        background-color: #fee2e2;
+        }
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.5rem;
+        }
+        th, td {
+        text-align: left;
+        padding: 0.5rem;
+        border-bottom: 1px solid #e5e7eb;
+        word-break: break-word;
+        }
+        th {
+        background-color: #f9fafb;
+        font-weight: 600;
+        }
+        .proxy-status {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        }
+        .btn-control {
+            padding: 1.2rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: white;
+            margin-right: 0.75rem;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Base button colors */
+        .btn-start {
+            background-color: #a3e635; /* Creamy Lime */
+        }
+        .btn-stop {
+            background-color: #facc15; /* Creamy Yellow */
+        }
+        .btn-clear {
+            background-color: #fb7185; /* Creamy Rose */
+            margin-right: 0.5rem;
+        }
+        .btn-live {
+            background-color: #7dd3fc; /* Creamy Sky Blue */
+            margin-right: 0.5rem;
+        }
+
+        /* Hover effects */
+        .btn-start:hover {
+            background-color: #bef264;
+        }
+        .btn-stop:hover {
+            background-color: #fde047;
+        }
+        .btn-clear:hover {
+            background-color: #fda4af;
+        }
+        .btn-live:hover {
+            background-color: #bae6fd;
+        }
+    </style>
     </head>
     <body>
-        <h1>Proxy Cache Viewer</h1>
+    <h1 style="text-align:center; margin-bottom: 2rem;">MultiThreaded Proxy Server</h1>
 
-        <!-- Proxy server control buttons -->
-        {% if proxy_running %}
-            <a href="{{ url_for('stop_proxy') }}" class="control-btn stop-btn">Stop Proxy Server</a>
-            <span style="color: green; font-weight: bold;">Proxy Server is Running</span>
+    <div style="text-align:center; margin-bottom: 1rem;">
+    {% if proxy_running %}
+        <a href="{{ url_for('stop_proxy') }}" class="btn-control btn-stop">Stop Server</a>
+        <div style="margin-top: 0.5rem; color: green; font-weight: 600;">
+        Proxy Server is Running
+        </div>
+    {% else %}
+        <a href="{{ url_for('start_proxy') }}" class="btn-control btn-start">Start Server</a>
+        <div style="margin-top: 0.5rem; color: red; font-weight: 600;">
+        Proxy Server is Stopped
+        </div>
+    {% endif %}
+    </div>
+
+    <div style="text-align:center; margin-bottom: 2rem;">
+    <a href="/live" class="btn-control btn-live">Live Stats</a>
+    <a href="/clearcache" class="btn-control btn-clear">Clear Cache</a>
+    </div>
+
+
+    <!-- Blacklist Section -->
+    <div class="blacklist-container">
+        <h2>Blacklisted Websites</h2>
+        <p>Add or remove websites to block by the proxy server.</p>
+
+        <form method="POST" class="flex">
+        <input
+            type="text"
+            name="site"
+            placeholder="Enter website domain (e.g., example.com)"
+            required
+        />
+        <button type="submit" name="action" value="add">Add</button>
+        </form>
+
+        <div style="max-height: 200px; overflow-y: auto;">
+        {% if blacklist %}
+            {% for site in blacklist %}
+            <div class="blacklist-item">
+                <span>{{ site }}</span>
+                <form method="POST" style="margin:0;">
+                <input type="hidden" name="site" value="{{ site }}" />
+                <button
+                    type="submit"
+                    name="action"
+                    value="remove"
+                    title="Remove"
+                >
+                    X
+                </button>
+                </form>
+            </div>
+            {% endfor %}
         {% else %}
-            <a href="{{ url_for('start_proxy') }}" class="control-btn start-btn">Start Proxy Server</a>
-            <span style="color: red; font-weight: bold;">Proxy Server is Stopped</span>
+            <p style="text-align:center; color:#9ca3af; font-style: italic; margin-top: 1rem;">
+            No blacklisted websites. Add some above.
+            </p>
         {% endif %}
+        </div>
+    </div>
 
-        <br><br>
-        <a href="/blacklist" class="clear-btn" style="background:#0275d8;">Manage Blacklist</a>
-        <a href="/live" class="clear-btn" style="background:#5cb85c;">Live Stats</a>
-        <a href="/clearcache" class="clear-btn">Clear Cache</a>
+    <!-- Cache Section -->
+        <div class="cache-container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <div>
+            <h2>Cache</h2>
+            <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">Cached resources and their sizes</p>
+            </div>
+        </div>
 
-        <!-- Cache table -->
-        <h3>Cached Responses</h3>
         <table>
             <thead>
-                <tr><th>URL (Cache Key)</th><th>Response Size (Bytes)</th></tr>
+            <tr>
+                <th>Cache Key (URL)</th>
+                <th style="width: 120px;">Size (Bytes)</th>
+            </tr>
             </thead>
             <tbody>
+            {% if cache %}
                 {% for key, value in cache.items() %}
                 <tr>
-                    <td style="word-break: break-all;">{{ key }}</td>
+                    <td style="font-family: monospace;">{{ key }}</td>
                     <td>{{ value|length }}</td>
                 </tr>
                 {% endfor %}
-                {% if not cache %}
-                <tr><td colspan="2" style="text-align:center;">No cached responses available.</td></tr>
-                {% endif %}
+            {% else %}
+                <tr>
+                <td colspan="2" style="text-align:center; color:#9ca3af;">
+                    Cache is empty.
+                </td>
+                </tr>
+            {% endif %}
             </tbody>
         </table>
+        </div>
     </body>
     </html>
+
     """
-    return render_template_string(html_template, cache=cache, proxy_running=proxy_running)
+
+    return render_template_string(html_template, cache=cache, proxy_running=proxy_running, blacklist=blacklist)
 
 @app.route("/start")
 def start_proxy():
@@ -461,7 +674,8 @@ def start_proxy():
 @app.route("/stop")
 def stop_proxy():
     """
-    Stops the running proxy server subprocess if running.
+    Stops the running proxy server subprocess if running,
+    and empties the proxy_dash.log file.
     """
     global proxy_process
 
@@ -469,6 +683,10 @@ def stop_proxy():
         proxy_process.terminate()
         proxy_process.wait()
         proxy_process = None
+
+    # Empty the log file
+    with open("proxy_dash.log", "w") as log_file:
+        pass  # Opening in "w" mode truncates the file
 
     return redirect("/")
 
