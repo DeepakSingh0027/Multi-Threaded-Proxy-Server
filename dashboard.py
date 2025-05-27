@@ -6,20 +6,15 @@ import pickle
 import subprocess
 import threading
 from datetime import datetime
-
 from flask import Flask, render_template_string, redirect, request
 from flask_socketio import SocketIO
-
 from config import CACHE_FILE
-
 
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-
 # Global variable to hold the proxy server process instance
 proxy_process = None
-
 monitor_thread = None
 monitor_thread_started = False
 monitor_lock = threading.Lock()

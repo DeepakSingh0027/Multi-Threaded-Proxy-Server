@@ -4,7 +4,7 @@
   "cache_limit": 50,
   "blacklist": [
     "facebook.com",
-    "httpbin.org/get",
-    "apple.com"
+    "apple.com",
+    "httpbin.org/get"
   ]
 }

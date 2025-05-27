@@ -1468,3 +1468,850 @@
 2025-05-25 12:52:43,489 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 63620): CONNECT player.anyclip.com:443 HTTP/1.1
 2025-05-25 12:52:43,770 [INFO] [+] New connection from ('127.0.0.1', 63622)
 2025-05-25 12:52:43,771 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 63622): CONNECT marketplace.anyclip.com:443 HTTP/1.1
+2025-05-26 08:29:29,474 [INFO] [*] Starting multi-threaded proxy on 127.0.0.1:8888...
+2025-05-26 08:29:29,802 [INFO] [+] New connection from ('127.0.0.1', 57378)
+2025-05-26 08:29:29,810 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57378): CONNECT cdn.socket.io:443 HTTP/1.1
+2025-05-26 08:29:31,504 [INFO] [+] New connection from ('127.0.0.1', 57380)
+2025-05-26 08:29:31,506 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57380): CONNECT ssl.gstatic.com:443 HTTP/1.1
+2025-05-26 08:29:35,025 [INFO] [+] New connection from ('127.0.0.1', 57382)
+2025-05-26 08:29:35,027 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57382): CONNECT clientservices.googleapis.com:443 HTTP/1.1
+2025-05-26 08:29:35,057 [INFO] [+] New connection from ('127.0.0.1', 57383)
+2025-05-26 08:29:35,059 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57383): CONNECT functional.events.data.microsoft.com:443 HTTP/1.1
+2025-05-26 08:29:35,257 [INFO] [+] New connection from ('127.0.0.1', 57386)
+2025-05-26 08:29:35,258 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57386): CONNECT update.googleapis.com:443 HTTP/1.1
+2025-05-26 08:29:35,968 [INFO] [+] New connection from ('127.0.0.1', 57388)
+2025-05-26 08:29:35,970 [INFO] [>] HTTP Request from ('127.0.0.1', 57388) to edgedl.me.gvt1.com:80 for HEAD http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:29:35,971 [INFO] Cache miss for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:35,971 [INFO] [Cache MISS] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:37,376 [INFO] [+] New connection from ('127.0.0.1', 57390)
+2025-05-26 08:29:37,473 [INFO] [+] New connection from ('127.0.0.1', 57391)
+2025-05-26 08:29:37,474 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57391): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-26 08:29:37,591 [INFO] [+] New connection from ('127.0.0.1', 57392)
+2025-05-26 08:29:37,605 [INFO] [+] New connection from ('127.0.0.1', 57394)
+2025-05-26 08:29:37,606 [INFO] [Blocked] Attempted access to httpbin.org
+2025-05-26 08:29:37,609 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57394): CONNECT google-ohttp-relay-safebrowsing.fastly-edge.com:443 HTTP/1.1
+2025-05-26 08:29:37,609 [INFO] [+] New connection from ('127.0.0.1', 57395)
+2025-05-26 08:29:37,620 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57395): CONNECT threat.api.mcafee.com:443 HTTP/1.1
+2025-05-26 08:29:37,647 [INFO] [>] HTTP Request from ('127.0.0.1', 57392) to httpbin.org:80 for GET http://httpbin.org/favicon.ico HTTP/1.1
+2025-05-26 08:29:37,647 [INFO] Cache hit for key: http://httpbin.org/favicon.ico
+2025-05-26 08:29:37,647 [INFO] [Cache HIT] http://httpbin.org/favicon.ico
+2025-05-26 08:29:38,535 [INFO] [+] New connection from ('127.0.0.1', 57398)
+2025-05-26 08:29:38,537 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57398): CONNECT waa-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:29:38,537 [INFO] [+] New connection from ('127.0.0.1', 57399)
+2025-05-26 08:29:38,538 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57399): CONNECT play.google.com:443 HTTP/1.1
+2025-05-26 08:29:38,819 [INFO] [+] New connection from ('127.0.0.1', 57402)
+2025-05-26 08:29:38,821 [INFO] [>] HTTP Request from ('127.0.0.1', 57402) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=126828983&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=502481236&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:29:38,821 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:29:38,821 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:29:38,835 [INFO] [+] New connection from ('127.0.0.1', 57403)
+2025-05-26 08:29:38,850 [INFO] [>] HTTP Request from ('127.0.0.1', 57403) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=485634010&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=197179117&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:29:38,851 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:29:38,851 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:29:41,203 [WARNING] [!] Timeout while reading from edgedl.me.gvt1.com
+2025-05-26 08:29:41,203 [INFO] Setting cache for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 with value: b'HTTP/1.1 200 OK\r\naccept-ranges: bytes\r\ncontent-disposition: attachment\r\ncontent-length: 26382\r\ncontent-security-policy: default-src \'none\'\r\nserver: Google-Edge-Cache\r\nx-content-type-options: nosniff\r\nx-frame-options: SAMEORIGIN\r\nx-xss-protection: 0\r\nx-request-id: 6be31aaf-77d9-4d09-ac1f-00df0d4cd772\r\ndate: Mon, 26 May 2025 00:33:15 GMT\r\nage: 8844\r\nlast-modified: Mon, 26 May 2025 00:27:24 GMT\r\netag: "4542ec6"\r\ncontent-type: application/octet-stream\r\nalt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000\r\ncache-control: public,max-age=86400\r\ncoprocessor-response: download-server\r\n\r\n'
+2025-05-26 08:29:41,204 [INFO] [Status Code] HTTP/1.1 200 OK
+2025-05-26 08:29:41,204 [INFO] [Response] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 | Method: GET | Duration: 5.23s
+2025-05-26 08:29:41,238 [INFO] [+] New connection from ('127.0.0.1', 57404)
+2025-05-26 08:29:41,240 [INFO] [>] HTTP Request from ('127.0.0.1', 57404) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:29:41,240 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:41,240 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:41,284 [INFO] [+] New connection from ('127.0.0.1', 57405)
+2025-05-26 08:29:41,286 [INFO] [>] HTTP Request from ('127.0.0.1', 57405) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:29:41,286 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:41,286 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:41,330 [INFO] [+] New connection from ('127.0.0.1', 57406)
+2025-05-26 08:29:41,332 [INFO] [>] HTTP Request from ('127.0.0.1', 57406) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:29:41,332 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:41,332 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:29:43,818 [INFO] [+] New connection from ('127.0.0.1', 57407)
+2025-05-26 08:29:43,819 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57407): CONNECT www.google.com:443 HTTP/1.1
+2025-05-26 08:29:47,213 [INFO] [+] New connection from ('127.0.0.1', 57409)
+2025-05-26 08:29:47,214 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57409): CONNECT www.googleapis.com:443 HTTP/1.1
+2025-05-26 08:29:49,657 [INFO] [+] New connection from ('127.0.0.1', 57411)
+2025-05-26 08:29:49,659 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57411): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:29:50,546 [INFO] [*] Starting multi-threaded proxy on 127.0.0.1:8888...
+2025-05-26 08:29:50,655 [INFO] [+] New connection from ('127.0.0.1', 57414)
+2025-05-26 08:29:50,658 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57414): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:29:50,910 [INFO] [+] New connection from ('127.0.0.1', 57413)
+2025-05-26 08:29:50,913 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57413): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:29:51,392 [INFO] [+] New connection from ('127.0.0.1', 57417)
+2025-05-26 08:29:51,392 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57417): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:29:54,177 [INFO] [+] New connection from ('127.0.0.1', 57419)
+2025-05-26 08:29:54,180 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57419): CONNECT functional.events.data.microsoft.com:443 HTTP/1.1
+2025-05-26 08:29:54,548 [INFO] [+] New connection from ('127.0.0.1', 57421)
+2025-05-26 08:29:54,551 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57421): CONNECT mtalk.google.com:5228 HTTP/1.1
+2025-05-26 08:29:57,432 [INFO] [+] New connection from ('127.0.0.1', 57423)
+2025-05-26 08:29:57,434 [INFO] [>] HTTP Request from ('127.0.0.1', 57423) to httpbin.org:80 for GET http://httpbin.org/get HTTP/1.1
+2025-05-26 08:29:57,434 [INFO] [+] New connection from ('127.0.0.1', 57424)
+2025-05-26 08:29:57,435 [INFO] Cache miss for key: http://httpbin.org/get
+2025-05-26 08:29:57,446 [INFO] [Cache MISS] http://httpbin.org/get
+2025-05-26 08:29:57,508 [INFO] [+] New connection from ('127.0.0.1', 57425)
+2025-05-26 08:29:57,510 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57425): CONNECT ssl.gstatic.com:443 HTTP/1.1
+2025-05-26 08:29:59,904 [INFO] [+] New connection from ('127.0.0.1', 57428)
+2025-05-26 08:29:59,905 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57428): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-26 08:30:01,259 [INFO] [+] New connection from ('127.0.0.1', 57430)
+2025-05-26 08:30:01,260 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57430): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-26 08:30:03,259 [WARNING] [!] Timeout while reading from httpbin.org
+2025-05-26 08:30:03,260 [INFO] Setting cache for key: http://httpbin.org/get with value: b'HTTP/1.1 200 OK\r\nDate: Mon, 26 May 2025 03:01:01 GMT\r\nContent-Type: application/json\r\nContent-Length: 683\r\nConnection: keep-alive\r\nServer: gunicorn/19.9.0\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Credentials: true\r\n\r\n{\n  "args": {}, \n  "headers": {\n    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", \n    "Accept-Encoding": "gzip, deflate", \n    "Accept-Language": "en-US,en;q=0.9", \n    "Cache-Control": "max-age=0", \n    "Host": "httpbin.org", \n    "Proxy-Connection": "keep-alive", \n    "Upgrade-Insecure-Requests": "1", \n    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36", \n    "X-Amzn-Trace-Id": "Root=1-6833d96d-3f6abc5a5b5d68242245dc31"\n  }, \n  "origin": "152.59.122.211", \n  "url": "http://httpbin.org/get"\n}\n'
+2025-05-26 08:30:03,261 [INFO] [Status Code] HTTP/1.1 200 OK
+2025-05-26 08:30:03,262 [INFO] [Response] http://httpbin.org/get | Method: GET | Duration: 5.83s
+2025-05-26 08:30:04,946 [INFO] [+] New connection from ('127.0.0.1', 57432)
+2025-05-26 08:30:04,948 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57432): CONNECT nleditor.osi.office.net:443 HTTP/1.1
+2025-05-26 08:30:07,143 [INFO] [*] Starting multi-threaded proxy on 127.0.0.1:8888...
+2025-05-26 08:30:07,296 [INFO] [+] New connection from ('127.0.0.1', 57436)
+2025-05-26 08:30:07,299 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57436): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:07,550 [INFO] [+] New connection from ('127.0.0.1', 57434)
+2025-05-26 08:30:07,552 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57434): CONNECT mtalk.google.com:5228 HTTP/1.1
+2025-05-26 08:30:07,553 [INFO] [+] New connection from ('127.0.0.1', 57435)
+2025-05-26 08:30:07,554 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57435): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:08,086 [INFO] [+] New connection from ('127.0.0.1', 57440)
+2025-05-26 08:30:08,087 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57440): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:08,217 [INFO] [+] New connection from ('127.0.0.1', 57442)
+2025-05-26 08:30:08,219 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57442): CONNECT functional.events.data.microsoft.com:443 HTTP/1.1
+2025-05-26 08:30:09,014 [INFO] [+] New connection from ('127.0.0.1', 57444)
+2025-05-26 08:30:09,017 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57444): CONNECT edge.microsoft.com:443 HTTP/1.1
+2025-05-26 08:30:11,858 [INFO] [*] Starting multi-threaded proxy on 127.0.0.1:8888...
+2025-05-26 08:30:12,030 [INFO] [+] New connection from ('127.0.0.1', 57447)
+2025-05-26 08:30:12,032 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57447): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:12,278 [INFO] [+] New connection from ('127.0.0.1', 57446)
+2025-05-26 08:30:12,281 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57446): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:12,798 [INFO] [+] New connection from ('127.0.0.1', 57450)
+2025-05-26 08:30:12,800 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57450): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:15,845 [INFO] [+] New connection from ('127.0.0.1', 57452)
+2025-05-26 08:30:15,847 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57452): CONNECT functional.events.data.microsoft.com:443 HTTP/1.1
+2025-05-26 08:30:15,907 [INFO] [+] New connection from ('127.0.0.1', 57453)
+2025-05-26 08:30:15,908 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57453): CONNECT nleditor.osi.office.net:443 HTTP/1.1
+2025-05-26 08:30:18,495 [INFO] [*] Starting multi-threaded proxy on 127.0.0.1:8888...
+2025-05-26 08:30:18,619 [INFO] [+] New connection from ('127.0.0.1', 57457)
+2025-05-26 08:30:18,622 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57457): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:18,865 [INFO] [+] New connection from ('127.0.0.1', 57456)
+2025-05-26 08:30:18,867 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57456): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:19,354 [INFO] [+] New connection from ('127.0.0.1', 57460)
+2025-05-26 08:30:19,355 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57460): CONNECT signaler-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:30:19,612 [INFO] [+] New connection from ('127.0.0.1', 57462)
+2025-05-26 08:30:19,613 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57462): CONNECT functional.events.data.microsoft.com:443 HTTP/1.1
+2025-05-26 08:30:20,324 [INFO] [+] New connection from ('127.0.0.1', 57464)
+2025-05-26 08:30:20,326 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57464): CONNECT edge.microsoft.com:443 HTTP/1.1
+2025-05-26 08:30:20,522 [INFO] [+] New connection from ('127.0.0.1', 57466)
+2025-05-26 08:30:20,524 [INFO] [+] New connection from ('127.0.0.1', 57467)
+2025-05-26 08:30:20,529 [INFO] [Blocked] Attempted access to httpbin.org
+2025-05-26 08:30:28,503 [INFO] [+] New connection from ('127.0.0.1', 57470)
+2025-05-26 08:30:28,506 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57470): CONNECT ssl.gstatic.com:443 HTTP/1.1
+2025-05-26 08:30:32,880 [INFO] [+] New connection from ('127.0.0.1', 57472)
+2025-05-26 08:30:32,881 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57472): CONNECT accounts.google.com:443 HTTP/1.1
+2025-05-26 08:30:38,505 [INFO] [+] New connection from ('127.0.0.1', 57474)
+2025-05-26 08:30:38,506 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57474): CONNECT play.google.com:443 HTTP/1.1
+2025-05-26 08:30:40,170 [INFO] [+] New connection from ('127.0.0.1', 57476)
+2025-05-26 08:30:40,171 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57476): CONNECT mtalk.google.com:5228 HTTP/1.1
+2025-05-26 08:30:41,389 [INFO] [+] New connection from ('127.0.0.1', 57478)
+2025-05-26 08:30:41,391 [INFO] [>] HTTP Request from ('127.0.0.1', 57478) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:30:41,392 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:30:41,393 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:30:44,676 [INFO] [+] New connection from ('127.0.0.1', 57489)
+2025-05-26 08:30:44,677 [INFO] [>] HTTP Request from ('127.0.0.1', 57489) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=58021479&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=52635717&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:44,678 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:44,678 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:46,657 [INFO] [+] New connection from ('127.0.0.1', 57491)
+2025-05-26 08:30:46,896 [INFO] [+] New connection from ('127.0.0.1', 57492)
+2025-05-26 08:30:46,898 [INFO] [+] New connection from ('127.0.0.1', 57493)
+2025-05-26 08:30:46,899 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57493): CONNECT cdnjs.cloudflare.com:443 HTTP/1.1
+2025-05-26 08:30:46,903 [INFO] [+] New connection from ('127.0.0.1', 57494)
+2025-05-26 08:30:46,920 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57494): CONNECT google-ohttp-relay-safebrowsing.fastly-edge.com:443 HTTP/1.1
+2025-05-26 08:30:46,920 [INFO] [+] New connection from ('127.0.0.1', 57495)
+2025-05-26 08:30:46,937 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57495): CONNECT threat.api.mcafee.com:443 HTTP/1.1
+2025-05-26 08:30:47,096 [INFO] [+] New connection from ('127.0.0.1', 57499)
+2025-05-26 08:30:47,098 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57499): CONNECT fonts.googleapis.com:443 HTTP/1.1
+2025-05-26 08:30:48,762 [INFO] [+] New connection from ('127.0.0.1', 57501)
+2025-05-26 08:30:48,764 [INFO] [>] HTTP Request from ('127.0.0.1', 57501) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=508452743&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=613758249&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:48,764 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:48,764 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:49,740 [INFO] [+] New connection from ('127.0.0.1', 57502)
+2025-05-26 08:30:49,775 [INFO] [+] New connection from ('127.0.0.1', 57503)
+2025-05-26 08:30:49,776 [INFO] [>] HTTP Request from ('127.0.0.1', 57503) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=770146645&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=433655103&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:49,776 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:49,776 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:49,975 [INFO] [+] New connection from ('127.0.0.1', 57504)
+2025-05-26 08:30:49,977 [INFO] [+] New connection from ('127.0.0.1', 57505)
+2025-05-26 08:30:49,978 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57505): CONNECT use.fontawesome.com:443 HTTP/1.1
+2025-05-26 08:30:49,982 [INFO] [>] HTTP Request from ('127.0.0.1', 57502) to web.simmons.edu:80 for GET http://web.simmons.edu/~grovesd/comm244/notes/week2/links HTTP/1.1
+2025-05-26 08:30:49,984 [INFO] Cache hit for key: http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-26 08:30:49,984 [INFO] [Cache HIT] http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-26 08:30:50,068 [INFO] [+] New connection from ('127.0.0.1', 57507)
+2025-05-26 08:30:50,070 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57507): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-26 08:30:50,365 [INFO] [>] HTTP Request from ('127.0.0.1', 57504) to web.simmons.edu:80 for GET http://web.simmons.edu/favicon.ico HTTP/1.1
+2025-05-26 08:30:50,365 [INFO] Cache hit for key: http://web.simmons.edu/favicon.ico
+2025-05-26 08:30:50,365 [INFO] [Cache HIT] http://web.simmons.edu/favicon.ico
+2025-05-26 08:30:50,548 [INFO] [+] New connection from ('127.0.0.1', 57509)
+2025-05-26 08:30:50,550 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57509): CONNECT www.googletagmanager.com:443 HTTP/1.1
+2025-05-26 08:30:50,603 [INFO] [+] New connection from ('127.0.0.1', 57510)
+2025-05-26 08:30:50,605 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57510): CONNECT safebrowsing.googleapis.com:443 HTTP/1.1
+2025-05-26 08:30:51,823 [INFO] [+] New connection from ('127.0.0.1', 57514)
+2025-05-26 08:30:51,825 [INFO] [>] HTTP Request from ('127.0.0.1', 57514) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=174764790&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=61565310&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:51,826 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:51,827 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:52,748 [INFO] [+] New connection from ('127.0.0.1', 57515)
+2025-05-26 08:30:52,749 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57515): CONNECT httparchive.org:443 HTTP/1.1
+2025-05-26 08:30:53,858 [INFO] [+] New connection from ('127.0.0.1', 57517)
+2025-05-26 08:30:53,860 [INFO] [>] HTTP Request from ('127.0.0.1', 57517) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=579382935&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=689475517&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:53,860 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:53,860 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:54,873 [INFO] [+] New connection from ('127.0.0.1', 57518)
+2025-05-26 08:30:54,874 [INFO] [>] HTTP Request from ('127.0.0.1', 57518) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=363502151&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=802790989&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:54,874 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:54,875 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:54,894 [INFO] [+] New connection from ('127.0.0.1', 57519)
+2025-05-26 08:30:54,905 [INFO] [>] HTTP Request from ('127.0.0.1', 57519) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=199881864&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=204070252&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:54,906 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:54,906 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:56,528 [INFO] [+] New connection from ('127.0.0.1', 57520)
+2025-05-26 08:30:56,744 [INFO] [+] New connection from ('127.0.0.1', 57521)
+2025-05-26 08:30:56,745 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57521): CONNECT www.googletagmanager.com:443 HTTP/1.1
+2025-05-26 08:30:56,756 [INFO] [+] New connection from ('127.0.0.1', 57523)
+2025-05-26 08:30:57,434 [INFO] [+] New connection from ('127.0.0.1', 57524)
+2025-05-26 08:30:57,435 [INFO] [>] HTTP Request from ('127.0.0.1', 57524) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=817157104&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=541289254&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:57,436 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:57,436 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:57,518 [INFO] [+] New connection from ('127.0.0.1', 57525)
+2025-05-26 08:30:57,520 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57525): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-26 08:30:58,262 [INFO] [+] New connection from ('127.0.0.1', 57527)
+2025-05-26 08:30:58,263 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57527): CONNECT almanac.httparchive.org:443 HTTP/1.1
+2025-05-26 08:30:58,263 [INFO] [+] New connection from ('127.0.0.1', 57528)
+2025-05-26 08:30:58,281 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57528): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:30:58,281 [INFO] [+] New connection from ('127.0.0.1', 57529)
+2025-05-26 08:30:58,301 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57529): CONNECT dev.to:443 HTTP/1.1
+2025-05-26 08:30:58,454 [INFO] [+] New connection from ('127.0.0.1', 57531)
+2025-05-26 08:30:58,455 [INFO] [>] HTTP Request from ('127.0.0.1', 57531) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=601276320&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=654604726&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:30:58,456 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:30:58,456 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:00,217 [INFO] [+] New connection from ('127.0.0.1', 57534)
+2025-05-26 08:31:00,219 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57534): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:31:00,670 [INFO] [+] New connection from ('127.0.0.1', 57536)
+2025-05-26 08:31:00,672 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57536): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:31:01,027 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 57536) <-> discuss.httparchive.org | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-26 08:31:10,640 [INFO] [+] New connection from ('127.0.0.1', 57539)
+2025-05-26 08:31:10,644 [INFO] [>] HTTP Request from ('127.0.0.1', 57539) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=398580343&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=547297296&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:31:10,645 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:10,645 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:14,377 [INFO] [+] New connection from ('127.0.0.1', 57544)
+2025-05-26 08:31:14,378 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57544): CONNECT csptoken.ccs.mcafee.com:443 HTTP/1.1
+2025-05-26 08:31:15,120 [INFO] [+] New connection from ('127.0.0.1', 57546)
+2025-05-26 08:31:15,123 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57546): CONNECT safebrowsingohttpgateway.googleapis.com:443 HTTP/1.1
+2025-05-26 08:31:32,037 [INFO] [+] New connection from ('127.0.0.1', 57551)
+2025-05-26 08:31:32,038 [INFO] [>] HTTP Request from ('127.0.0.1', 57551) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=598476162&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=64946165&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:31:32,039 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:32,039 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:32,328 [INFO] [+] New connection from ('127.0.0.1', 57552)
+2025-05-26 08:31:32,329 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57552): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-26 08:31:32,570 [INFO] [+] New connection from ('127.0.0.1', 57554)
+2025-05-26 08:31:32,572 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57554): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-26 08:31:34,130 [INFO] [+] New connection from ('127.0.0.1', 57556)
+2025-05-26 08:31:34,131 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57556): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-26 08:31:34,435 [INFO] [+] New connection from ('127.0.0.1', 57558)
+2025-05-26 08:31:34,437 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57558): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-26 08:31:35,898 [INFO] [+] New connection from ('127.0.0.1', 57560)
+2025-05-26 08:31:35,900 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57560): CONNECT search.yahoo.com:443 HTTP/1.1
+2025-05-26 08:31:35,900 [INFO] [+] New connection from ('127.0.0.1', 57561)
+2025-05-26 08:31:35,901 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57561): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-26 08:31:36,093 [INFO] [+] New connection from ('127.0.0.1', 57564)
+2025-05-26 08:31:36,095 [INFO] [>] HTTP Request from ('127.0.0.1', 57564) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=690102399&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=931370816&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:31:36,095 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:36,096 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:37,467 [INFO] [+] New connection from ('127.0.0.1', 57565)
+2025-05-26 08:31:37,468 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57565): CONNECT content-autofill.googleapis.com:443 HTTP/1.1
+2025-05-26 08:31:37,503 [INFO] [+] New connection from ('127.0.0.1', 57566)
+2025-05-26 08:31:37,504 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57566): CONNECT c.bing.com:443 HTTP/1.1
+2025-05-26 08:31:37,660 [INFO] [+] New connection from ('127.0.0.1', 57569)
+2025-05-26 08:31:37,662 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57569): CONNECT threat.api.mcafee.com:443 HTTP/1.1
+2025-05-26 08:31:37,662 [INFO] [+] New connection from ('127.0.0.1', 57570)
+2025-05-26 08:31:37,706 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57570): CONNECT threat.api.mcafee.com:443 HTTP/1.1
+2025-05-26 08:31:37,707 [INFO] [+] New connection from ('127.0.0.1', 57571)
+2025-05-26 08:31:37,737 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57571): CONNECT threat.api.mcafee.com:443 HTTP/1.1
+2025-05-26 08:31:38,127 [INFO] [+] New connection from ('127.0.0.1', 57575)
+2025-05-26 08:31:38,129 [INFO] [>] HTTP Request from ('127.0.0.1', 57575) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=258340831&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=158001759&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:31:38,129 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:38,130 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:38,919 [INFO] [+] New connection from ('127.0.0.1', 57576)
+2025-05-26 08:31:38,920 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57576): CONNECT www.google.com:443 HTTP/1.1
+2025-05-26 08:31:39,153 [INFO] [+] New connection from ('127.0.0.1', 57578)
+2025-05-26 08:31:39,154 [INFO] [>] HTTP Request from ('127.0.0.1', 57578) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=878839760&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=672596494&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:31:39,155 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:39,156 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:39,173 [INFO] [+] New connection from ('127.0.0.1', 57579)
+2025-05-26 08:31:39,176 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57579): CONNECT r.search.yahoo.com:443 HTTP/1.1
+2025-05-26 08:31:39,200 [INFO] [+] New connection from ('127.0.0.1', 57580)
+2025-05-26 08:31:39,201 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57580): CONNECT www.google.com:443 HTTP/1.1
+2025-05-26 08:31:39,570 [INFO] [+] New connection from ('127.0.0.1', 57583)
+2025-05-26 08:31:39,571 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57583): CONNECT csp.withgoogle.com:443 HTTP/1.1
+2025-05-26 08:31:39,935 [INFO] [+] New connection from ('127.0.0.1', 57585)
+2025-05-26 08:31:39,936 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57585): CONNECT www.gstatic.com:443 HTTP/1.1
+2025-05-26 08:31:39,973 [INFO] [+] New connection from ('127.0.0.1', 57586)
+2025-05-26 08:31:39,975 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57586): CONNECT id.google.com:443 HTTP/1.1
+2025-05-26 08:31:40,079 [INFO] [+] New connection from ('127.0.0.1', 57589)
+2025-05-26 08:31:40,080 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57589): CONNECT content-autofill.googleapis.com:443 HTTP/1.1
+2025-05-26 08:31:40,344 [INFO] [+] New connection from ('127.0.0.1', 57591)
+2025-05-26 08:31:40,345 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57591): CONNECT ogads-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:31:40,734 [INFO] [+] New connection from ('127.0.0.1', 57593)
+2025-05-26 08:31:40,736 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57593): CONNECT ogads-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:31:41,203 [INFO] [+] New connection from ('127.0.0.1', 57595)
+2025-05-26 08:31:41,205 [INFO] [>] HTTP Request from ('127.0.0.1', 57595) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=283457905&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=300506701&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:31:41,205 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:41,206 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:31:41,352 [INFO] [+] New connection from ('127.0.0.1', 57596)
+2025-05-26 08:31:41,353 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57596): CONNECT play.google.com:443 HTTP/1.1
+2025-05-26 08:31:41,440 [INFO] [+] New connection from ('127.0.0.1', 57598)
+2025-05-26 08:31:41,441 [INFO] [>] HTTP Request from ('127.0.0.1', 57598) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:31:41,442 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:31:41,442 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:31:41,737 [INFO] [+] New connection from ('127.0.0.1', 57599)
+2025-05-26 08:31:41,737 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57599): CONNECT play.google.com:443 HTTP/1.1
+2025-05-26 08:31:42,894 [INFO] [+] New connection from ('127.0.0.1', 57601)
+2025-05-26 08:31:42,895 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57601): CONNECT apps.overwolf.com:443 HTTP/1.1
+2025-05-26 08:31:43,541 [INFO] [+] New connection from ('127.0.0.1', 57604)
+2025-05-26 08:31:43,543 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57604): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-26 08:31:52,308 [INFO] [+] New connection from ('127.0.0.1', 57606)
+2025-05-26 08:31:52,309 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57606): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-26 08:31:53,515 [INFO] [+] New connection from ('127.0.0.1', 57608)
+2025-05-26 08:31:53,517 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57608): CONNECT beacon.speedcurve.com:443 HTTP/1.1
+2025-05-26 08:31:57,400 [INFO] [+] New connection from ('127.0.0.1', 57610)
+2025-05-26 08:31:57,401 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57610): CONNECT cdn.socket.io:443 HTTP/1.1
+2025-05-26 08:32:05,365 [INFO] [+] New connection from ('127.0.0.1', 57614)
+2025-05-26 08:32:05,368 [INFO] [Blocked] Attempted access to httpbin.org
+2025-05-26 08:32:05,368 [INFO] [+] New connection from ('127.0.0.1', 57615)
+2025-05-26 08:32:07,274 [INFO] [+] New connection from ('127.0.0.1', 57616)
+2025-05-26 08:32:07,275 [INFO] [+] New connection from ('127.0.0.1', 57617)
+2025-05-26 08:32:07,276 [INFO] [+] New connection from ('127.0.0.1', 57618)
+2025-05-26 08:32:07,277 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57618): CONNECT cdnjs.cloudflare.com:443 HTTP/1.1
+2025-05-26 08:32:07,282 [INFO] [>] HTTP Request from ('127.0.0.1', 57616) to httpforever.com:80 for GET http://httpforever.com/ HTTP/1.1
+2025-05-26 08:32:07,282 [INFO] Cache miss for key: http://httpforever.com/
+2025-05-26 08:32:07,283 [INFO] [Cache MISS] http://httpforever.com/
+2025-05-26 08:32:10,470 [INFO] [+] New connection from ('127.0.0.1', 57621)
+2025-05-26 08:32:10,472 [INFO] [+] New connection from ('127.0.0.1', 57622)
+2025-05-26 08:32:10,473 [INFO] [>] HTTP Request from ('127.0.0.1', 57622) to web.simmons.edu:80 for GET http://web.simmons.edu/~grovesd/comm244/notes/week2/links HTTP/1.1
+2025-05-26 08:32:10,473 [INFO] [+] New connection from ('127.0.0.1', 57623)
+2025-05-26 08:32:10,473 [INFO] Cache hit for key: http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-26 08:32:10,474 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57623): CONNECT use.fontawesome.com:443 HTTP/1.1
+2025-05-26 08:32:10,474 [INFO] [Cache HIT] http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-26 08:32:12,069 [INFO] [+] New connection from ('127.0.0.1', 57625)
+2025-05-26 08:32:12,071 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57625): CONNECT lux.speedcurve.com:443 HTTP/1.1
+2025-05-26 08:32:13,209 [WARNING] [!] Timeout while reading from httpforever.com
+2025-05-26 08:32:13,210 [INFO] Setting cache for key: http://httpforever.com/ with value: b'HTTP/1.1 304 Not Modified\r\nServer: nginx/1.18.0 (Ubuntu)\r\nDate: Mon, 26 May 2025 03:03:11 GMT\r\nLast-Modified: Wed, 22 Mar 2023 14:54:48 GMT\r\nConnection: keep-alive\r\nETag: "641b16b8-1404"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nX-Content-Type-Options: nosniff\r\nFeature-Policy: accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'\r\nContent-Security-Policy: default-src \'self\'; script-src cdnjs.cloudflare.com \'self\'; style-src cdnjs.cloudflare.com \'self\' fonts.googleapis.com \'unsafe-inline\'; font-src fonts.googleapis.com fonts.gstatic.com cdnjs.cloudflare.com; frame-ancestors \'none\'; report-uri https://scotthelme.report-uri.com/r/d/csp/enforce\r\n\r\n'
+2025-05-26 08:32:13,211 [INFO] [Status Code] HTTP/1.1 304 Not Modified
+2025-05-26 08:32:13,211 [INFO] [Response] http://httpforever.com/ | Method: GET | Duration: 5.93s
+2025-05-26 08:32:13,872 [INFO] [+] New connection from ('127.0.0.1', 57627)
+2025-05-26 08:32:13,875 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57627): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:32:15,450 [INFO] [+] New connection from ('127.0.0.1', 57629)
+2025-05-26 08:32:15,451 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57629): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:32:15,754 [INFO] [+] New connection from ('127.0.0.1', 57631)
+2025-05-26 08:32:15,756 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57631): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:32:15,756 [INFO] [+] New connection from ('127.0.0.1', 57632)
+2025-05-26 08:32:15,777 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57632): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:32:16,110 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 57631) <-> discuss.httparchive.org | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-26 08:32:16,417 [INFO] [+] New connection from ('127.0.0.1', 57635)
+2025-05-26 08:32:16,418 [INFO] [>] HTTP Request from ('127.0.0.1', 57635) to info.cern.ch:80 for GET http://info.cern.ch/ HTTP/1.1
+2025-05-26 08:32:16,418 [INFO] [+] New connection from ('127.0.0.1', 57636)
+2025-05-26 08:32:16,420 [INFO] Cache miss for key: http://info.cern.ch/
+2025-05-26 08:32:16,440 [INFO] [Cache MISS] http://info.cern.ch/
+2025-05-26 08:32:16,508 [INFO] [+] New connection from ('127.0.0.1', 57637)
+2025-05-26 08:32:16,509 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57637): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-26 08:32:17,586 [INFO] Setting cache for key: http://info.cern.ch/ with value: b'HTTP/1.1 304 Not Modified\r\nDate: Mon, 26 May 2025 03:03:20 GMT\r\nServer: Apache\r\nLast-Modified: Wed, 05 Feb 2014 16:00:31 GMT\r\nETag: "286-4f1aadb3105c0"\r\nAccept-Ranges: bytes\r\nConnection: close\r\n\r\n'
+2025-05-26 08:32:17,588 [INFO] [Status Code] HTTP/1.1 304 Not Modified
+2025-05-26 08:32:17,588 [INFO] [Response] http://info.cern.ch/ | Method: GET | Duration: 1.17s
+2025-05-26 08:32:19,505 [INFO] [+] New connection from ('127.0.0.1', 57640)
+2025-05-26 08:32:19,506 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57640): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-26 08:32:20,642 [INFO] [+] New connection from ('127.0.0.1', 57642)
+2025-05-26 08:32:20,644 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57642): CONNECT geo.yahoo.com:443 HTTP/1.1
+2025-05-26 08:32:24,894 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 57464) <-> edge.microsoft.com | [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-05-26 08:32:30,016 [INFO] [+] New connection from ('127.0.0.1', 57644)
+2025-05-26 08:32:30,018 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57644): CONNECT apps.overwolf.com:443 HTTP/1.1
+2025-05-26 08:32:38,503 [INFO] [+] New connection from ('127.0.0.1', 57646)
+2025-05-26 08:32:38,504 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57646): CONNECT mobile.events.data.microsoft.com:443 HTTP/1.0
+2025-05-26 08:32:41,504 [INFO] [+] New connection from ('127.0.0.1', 57648)
+2025-05-26 08:32:41,505 [INFO] [>] HTTP Request from ('127.0.0.1', 57648) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:32:41,506 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:32:41,506 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:32:48,544 [INFO] [+] New connection from ('127.0.0.1', 57652)
+2025-05-26 08:32:48,546 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57652): CONNECT accounts.google.com:443 HTTP/1.1
+2025-05-26 08:32:48,550 [INFO] [+] New connection from ('127.0.0.1', 57653)
+2025-05-26 08:32:48,562 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57653): CONNECT mail.google.com:443 HTTP/1.1
+2025-05-26 08:33:05,493 [INFO] [+] New connection from ('127.0.0.1', 57658)
+2025-05-26 08:33:05,494 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57658): CONNECT main.vscode-cdn.net:443 HTTP/1.1
+2025-05-26 08:33:12,834 [INFO] [+] New connection from ('127.0.0.1', 57660)
+2025-05-26 08:33:12,836 [INFO] [>] HTTP Request from ('127.0.0.1', 57660) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=502870484&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=781343390&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-26 08:33:12,837 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-26 08:33:12,837 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-26 08:33:16,058 [INFO] [+] New connection from ('127.0.0.1', 57661)
+2025-05-26 08:33:16,061 [INFO] [+] New connection from ('127.0.0.1', 57662)
+2025-05-26 08:33:16,061 [INFO] [+] New connection from ('127.0.0.1', 57663)
+2025-05-26 08:33:16,067 [INFO] [>] HTTP Request from ('127.0.0.1', 57661) to httpforever.com:80 for GET http://httpforever.com/ HTTP/1.1
+2025-05-26 08:33:16,085 [INFO] Cache hit for key: http://httpforever.com/
+2025-05-26 08:33:16,085 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57663): CONNECT cdnjs.cloudflare.com:443 HTTP/1.1
+2025-05-26 08:33:16,086 [INFO] [Cache HIT] http://httpforever.com/
+2025-05-26 08:33:16,086 [INFO] [+] New connection from ('127.0.0.1', 57664)
+2025-05-26 08:33:16,108 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57664): CONNECT fonts.googleapis.com:443 HTTP/1.1
+2025-05-26 08:33:16,115 [INFO] [+] New connection from ('127.0.0.1', 57666)
+2025-05-26 08:33:16,138 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57666): CONNECT beacons.gcp.gvt2.com:443 HTTP/1.1
+2025-05-26 08:33:19,000 [INFO] [+] New connection from ('127.0.0.1', 57670)
+2025-05-26 08:33:19,002 [INFO] [+] New connection from ('127.0.0.1', 57671)
+2025-05-26 08:33:19,002 [INFO] [>] HTTP Request from ('127.0.0.1', 57670) to web.simmons.edu:80 for GET http://web.simmons.edu/~grovesd/comm244/notes/week2/links HTTP/1.1
+2025-05-26 08:33:19,003 [INFO] Cache hit for key: http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-26 08:33:19,003 [INFO] [+] New connection from ('127.0.0.1', 57672)
+2025-05-26 08:33:19,003 [INFO] [Cache HIT] http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-26 08:33:19,004 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57672): CONNECT use.fontawesome.com:443 HTTP/1.1
+2025-05-26 08:33:21,852 [INFO] [+] New connection from ('127.0.0.1', 57674)
+2025-05-26 08:33:21,853 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57674): CONNECT httparchive.org:443 HTTP/1.1
+2025-05-26 08:33:21,853 [INFO] [+] New connection from ('127.0.0.1', 57675)
+2025-05-26 08:33:21,871 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57675): CONNECT cdn.speedcurve.com:443 HTTP/1.1
+2025-05-26 08:33:23,705 [INFO] [+] New connection from ('127.0.0.1', 57678)
+2025-05-26 08:33:23,706 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57678): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:33:23,707 [INFO] [+] New connection from ('127.0.0.1', 57679)
+2025-05-26 08:33:23,707 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57679): CONNECT dev.to:443 HTTP/1.1
+2025-05-26 08:33:24,575 [INFO] [+] New connection from ('127.0.0.1', 57682)
+2025-05-26 08:33:24,577 [INFO] [>] HTTP Request from ('127.0.0.1', 57682) to info.cern.ch:80 for GET http://info.cern.ch/ HTTP/1.1
+2025-05-26 08:33:24,577 [INFO] [+] New connection from ('127.0.0.1', 57683)
+2025-05-26 08:33:24,577 [INFO] Cache hit for key: http://info.cern.ch/
+2025-05-26 08:33:24,592 [INFO] [Cache HIT] http://info.cern.ch/
+2025-05-26 08:33:25,222 [INFO] [+] New connection from ('127.0.0.1', 57684)
+2025-05-26 08:33:25,224 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57684): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:33:25,540 [INFO] [+] New connection from ('127.0.0.1', 57686)
+2025-05-26 08:33:25,542 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57686): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:33:25,542 [INFO] [+] New connection from ('127.0.0.1', 57687)
+2025-05-26 08:33:25,543 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57687): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-26 08:33:34,139 [INFO] [+] New connection from ('127.0.0.1', 57691)
+2025-05-26 08:33:34,141 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57691): CONNECT search.yahoo.com:443 HTTP/1.1
+2025-05-26 08:33:34,141 [INFO] [+] New connection from ('127.0.0.1', 57692)
+2025-05-26 08:33:34,158 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57692): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-26 08:33:37,345 [INFO] [+] New connection from ('127.0.0.1', 57697)
+2025-05-26 08:33:37,346 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57697): CONNECT clientservices.googleapis.com:443 HTTP/1.1
+2025-05-26 08:33:37,705 [INFO] [+] New connection from ('127.0.0.1', 57699)
+2025-05-26 08:33:37,707 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57699): CONNECT www.google.com:443 HTTP/1.1
+2025-05-26 08:33:38,159 [INFO] [+] New connection from ('127.0.0.1', 57701)
+2025-05-26 08:33:38,161 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57701): CONNECT www.google.com:443 HTTP/1.1
+2025-05-26 08:33:38,504 [INFO] [+] New connection from ('127.0.0.1', 57703)
+2025-05-26 08:33:38,507 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57703): CONNECT id.google.com:443 HTTP/1.1
+2025-05-26 08:33:38,542 [INFO] [+] New connection from ('127.0.0.1', 57705)
+2025-05-26 08:33:38,544 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57705): CONNECT ogads-pa.clients6.google.com:443 HTTP/1.1
+2025-05-26 08:33:39,548 [INFO] [+] New connection from ('127.0.0.1', 57707)
+2025-05-26 08:33:39,550 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57707): CONNECT play.google.com:443 HTTP/1.1
+2025-05-26 08:33:41,573 [INFO] [+] New connection from ('127.0.0.1', 57709)
+2025-05-26 08:33:41,574 [INFO] [>] HTTP Request from ('127.0.0.1', 57709) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107 HTTP/1.1
+2025-05-26 08:33:41,574 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:33:41,574 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/c5b8a46f9724686995d5aa16a1720a50f7933669edb42a013d47c6d7d6159107
+2025-05-26 08:34:15,420 [INFO] [+] New connection from ('127.0.0.1', 57710)
+2025-05-26 08:34:15,422 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57710): CONNECT beacon.speedcurve.com:443 HTTP/1.1
+2025-05-26 08:34:15,617 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 57710) <-> beacon.speedcurve.com | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-26 08:34:17,037 [INFO] [+] New connection from ('127.0.0.1', 57712)
+2025-05-26 08:34:17,038 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 57712): CONNECT analyticsnew.overwolf.com:443 HTTP/1.1
+2025-05-27 08:50:00,400 [INFO] [*] Starting multi-threaded proxy on 127.0.0.1:8888...
+2025-05-27 08:50:00,748 [INFO] [+] New connection from ('127.0.0.1', 54050)
+2025-05-27 08:50:00,750 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54050): CONNECT v10.events.data.microsoft.com:443 HTTP/1.1
+2025-05-27 08:50:01,874 [INFO] [+] New connection from ('127.0.0.1', 54054)
+2025-05-27 08:50:01,875 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54054): CONNECT mobile.events.data.microsoft.com:443 HTTP/1.0
+2025-05-27 08:50:02,084 [INFO] [+] New connection from ('127.0.0.1', 54055)
+2025-05-27 08:50:02,086 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54055): CONNECT functional.events.data.microsoft.com:443 HTTP/1.1
+2025-05-27 08:50:08,591 [INFO] [+] New connection from ('127.0.0.1', 54061)
+2025-05-27 08:50:08,592 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54061): CONNECT v10.events.data.microsoft.com:443 HTTP/1.1
+2025-05-27 08:50:21,511 [INFO] [+] New connection from ('127.0.0.1', 54082)
+2025-05-27 08:50:21,513 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54082): CONNECT edge.microsoft.com:443 HTTP/1.1
+2025-05-27 08:50:30,346 [INFO] [+] New connection from ('127.0.0.1', 54096)
+2025-05-27 08:50:30,350 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54096): CONNECT clientservices.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:30,376 [INFO] [+] New connection from ('127.0.0.1', 54097)
+2025-05-27 08:50:30,377 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54097): CONNECT clientservices.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:30,540 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 54096) <-> clientservices.googleapis.com | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:50:30,688 [INFO] [+] New connection from ('127.0.0.1', 54100)
+2025-05-27 08:50:30,690 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54100): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-27 08:50:30,690 [INFO] [+] New connection from ('127.0.0.1', 54101)
+2025-05-27 08:50:30,708 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54101): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-27 08:50:30,708 [INFO] [+] New connection from ('127.0.0.1', 54102)
+2025-05-27 08:50:30,726 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54102): CONNECT accounts.google.com:443 HTTP/1.1
+2025-05-27 08:50:30,726 [INFO] [+] New connection from ('127.0.0.1', 54103)
+2025-05-27 08:50:30,728 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54103): CONNECT data.iana.org:443 HTTP/1.1
+2025-05-27 08:50:30,728 [INFO] [+] New connection from ('127.0.0.1', 54104)
+2025-05-27 08:50:30,729 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54104): CONNECT publicsuffix.org:443 HTTP/1.1
+2025-05-27 08:50:30,729 [INFO] [+] New connection from ('127.0.0.1', 54105)
+2025-05-27 08:50:30,748 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54105): CONNECT sadownload.mcafee.com:443 HTTP/1.1
+2025-05-27 08:50:30,886 [INFO] [+] New connection from ('127.0.0.1', 54112)
+2025-05-27 08:50:30,887 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54112): CONNECT sadownload.mcafee.com:443 HTTP/1.1
+2025-05-27 08:50:31,090 [INFO] [+] New connection from ('127.0.0.1', 54114)
+2025-05-27 08:50:31,091 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 54105) <-> sadownload.mcafee.com | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:50:31,091 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 54103) <-> data.iana.org | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:50:31,092 [INFO] [+] New connection from ('127.0.0.1', 54115)
+2025-05-27 08:50:31,094 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54114): CONNECT data.iana.org:443 HTTP/1.1
+2025-05-27 08:50:31,116 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54115): CONNECT publicsuffix.org:443 HTTP/1.1
+2025-05-27 08:50:31,116 [INFO] [+] New connection from ('127.0.0.1', 54116)
+2025-05-27 08:50:31,135 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54116): CONNECT sadownload.mcafee.com:443 HTTP/1.1
+2025-05-27 08:50:31,137 [INFO] [+] New connection from ('127.0.0.1', 54117)
+2025-05-27 08:50:31,154 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54117): CONNECT sadownload.mcafee.com:443 HTTP/1.1
+2025-05-27 08:50:31,154 [INFO] [+] New connection from ('127.0.0.1', 54118)
+2025-05-27 08:50:31,157 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54118): CONNECT accounts.google.com:443 HTTP/1.1
+2025-05-27 08:50:31,232 [INFO] [+] New connection from ('127.0.0.1', 54124)
+2025-05-27 08:50:31,235 [INFO] [>] HTTP Request from ('127.0.0.1', 54124) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=870812422&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=299443900&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:31,236 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:31,236 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:31,260 [INFO] [+] New connection from ('127.0.0.1', 54125)
+2025-05-27 08:50:31,275 [INFO] [>] HTTP Request from ('127.0.0.1', 54125) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=588422476&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=688839663&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:31,276 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:31,276 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:31,733 [INFO] [+] New connection from ('127.0.0.1', 54127)
+2025-05-27 08:50:31,736 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54127): CONNECT api.overwolf.com:443 HTTP/1.1
+2025-05-27 08:50:31,736 [INFO] [+] New connection from ('127.0.0.1', 54126)
+2025-05-27 08:50:31,737 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54126): CONNECT analyticsnew.overwolf.com:443 HTTP/1.1
+2025-05-27 08:50:31,987 [INFO] [+] New connection from ('127.0.0.1', 54128)
+2025-05-27 08:50:32,229 [INFO] [+] New connection from ('127.0.0.1', 54131)
+2025-05-27 08:50:32,236 [INFO] [Blocked] Attempted access to httpbin.org
+2025-05-27 08:50:32,251 [INFO] [+] New connection from ('127.0.0.1', 54132)
+2025-05-27 08:50:32,276 [INFO] [>] HTTP Request from ('127.0.0.1', 54132) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=13736665&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=107457253&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:32,276 [INFO] [+] New connection from ('127.0.0.1', 54133)
+2025-05-27 08:50:32,277 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,281 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,281 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54133): CONNECT google-ohttp-relay-safebrowsing.fastly-edge.com:443 HTTP/1.1
+2025-05-27 08:50:32,350 [INFO] [+] New connection from ('127.0.0.1', 54134)
+2025-05-27 08:50:32,352 [INFO] [>] HTTP Request from ('127.0.0.1', 54134) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=599290885&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=395388689&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:32,353 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,354 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,377 [INFO] [+] New connection from ('127.0.0.1', 54136)
+2025-05-27 08:50:32,398 [INFO] [>] HTTP Request from ('127.0.0.1', 54131) to httpbin.org:80 for GET http://httpbin.org/favicon.ico HTTP/1.1
+2025-05-27 08:50:32,399 [INFO] [>] HTTP Request from ('127.0.0.1', 54136) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=316900939&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=784784452&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:32,399 [INFO] Cache hit for key: http://httpbin.org/favicon.ico
+2025-05-27 08:50:32,400 [INFO] [Cache HIT] http://httpbin.org/favicon.ico
+2025-05-27 08:50:32,401 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,419 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,421 [INFO] [+] New connection from ('127.0.0.1', 54137)
+2025-05-27 08:50:32,423 [INFO] [>] HTTP Request from ('127.0.0.1', 54137) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=870890706&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=575459479&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:32,424 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,424 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,447 [INFO] [+] New connection from ('127.0.0.1', 54138)
+2025-05-27 08:50:32,465 [INFO] [>] HTTP Request from ('127.0.0.1', 54138) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=707270419&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=976738743&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:32,466 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,467 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,486 [INFO] [+] New connection from ('127.0.0.1', 54139)
+2025-05-27 08:50:32,505 [INFO] [>] HTTP Request from ('127.0.0.1', 54139) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=261260185&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=767413769&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:32,505 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,505 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,529 [INFO] [+] New connection from ('127.0.0.1', 54140)
+2025-05-27 08:50:32,550 [INFO] [>] HTTP Request from ('127.0.0.1', 54140) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=815249952&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=558088796&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:32,551 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,551 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:32,590 [INFO] [+] New connection from ('127.0.0.1', 54141)
+2025-05-27 08:50:32,599 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54141): CONNECT csptoken.ccs.mcafee.com:443 HTTP/1.1
+2025-05-27 08:50:33,943 [INFO] [+] New connection from ('127.0.0.1', 54144)
+2025-05-27 08:50:33,945 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54144): CONNECT update.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:34,071 [INFO] [+] New connection from ('127.0.0.1', 54146)
+2025-05-27 08:50:34,073 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54146): CONNECT mtalk.google.com:5228 HTTP/1.1
+2025-05-27 08:50:34,073 [INFO] [+] New connection from ('127.0.0.1', 54147)
+2025-05-27 08:50:34,075 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 54147): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-27 08:50:34,241 [INFO] [+] New connection from ('127.0.0.1', 56371)
+2025-05-27 08:50:34,243 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56371): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-27 08:50:34,244 [INFO] [+] New connection from ('127.0.0.1', 56372)
+2025-05-27 08:50:34,276 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56372): CONNECT update.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:34,276 [INFO] [+] New connection from ('127.0.0.1', 56373)
+2025-05-27 08:50:34,309 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56373): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-27 08:50:34,309 [INFO] [+] New connection from ('127.0.0.1', 56374)
+2025-05-27 08:50:34,336 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56374): CONNECT update.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:34,337 [INFO] [+] New connection from ('127.0.0.1', 56375)
+2025-05-27 08:50:34,339 [INFO] [>] HTTP Request from ('127.0.0.1', 56375) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=700744756&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=345971697&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:34,339 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:34,341 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:34,349 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 56372) <-> update.googleapis.com | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:50:34,366 [INFO] [+] New connection from ('127.0.0.1', 56383)
+2025-05-27 08:50:34,373 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56383): CONNECT threat.api.mcafee.com:443 HTTP/1.1
+2025-05-27 08:50:34,373 [INFO] [+] New connection from ('127.0.0.1', 56384)
+2025-05-27 08:50:34,375 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 54147) <-> android.clients.google.com | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:50:34,377 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56384): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-27 08:50:34,537 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 56371) <-> android.clients.google.com | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:50:35,013 [INFO] [+] New connection from ('127.0.0.1', 56388)
+2025-05-27 08:50:35,015 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56388): CONNECT sadownload.mcafee.com:443 HTTP/1.1
+2025-05-27 08:50:35,076 [INFO] [+] New connection from ('127.0.0.1', 56390)
+2025-05-27 08:50:35,304 [INFO] [+] New connection from ('127.0.0.1', 56391)
+2025-05-27 08:50:35,305 [INFO] [+] New connection from ('127.0.0.1', 56392)
+2025-05-27 08:50:35,305 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56392): CONNECT cdnjs.cloudflare.com:443 HTTP/1.1
+2025-05-27 08:50:35,306 [INFO] [+] New connection from ('127.0.0.1', 56393)
+2025-05-27 08:50:35,321 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56393): CONNECT fonts.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:35,321 [INFO] [+] New connection from ('127.0.0.1', 56394)
+2025-05-27 08:50:35,322 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56394): CONNECT google-ohttp-relay-safebrowsing.fastly-edge.com:443 HTTP/1.1
+2025-05-27 08:50:36,081 [INFO] [+] New connection from ('127.0.0.1', 56398)
+2025-05-27 08:50:36,082 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56398): CONNECT login.live.com:443 HTTP/1.1
+2025-05-27 08:50:36,122 [INFO] [+] New connection from ('127.0.0.1', 56400)
+2025-05-27 08:50:36,125 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56400): CONNECT config.edge.skype.com:443 HTTP/1.1
+2025-05-27 08:50:36,329 [INFO] [+] New connection from ('127.0.0.1', 56402)
+2025-05-27 08:50:36,330 [INFO] [>] HTTP Request from ('127.0.0.1', 56402) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=464167929&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=668579785&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:36,332 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:36,332 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:37,354 [INFO] [+] New connection from ('127.0.0.1', 56403)
+2025-05-27 08:50:37,357 [INFO] [>] HTTP Request from ('127.0.0.1', 56403) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=725861830&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=488476639&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:37,357 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:37,358 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:37,388 [INFO] [+] New connection from ('127.0.0.1', 56404)
+2025-05-27 08:50:37,407 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56404): CONNECT httparchive.org:443 HTTP/1.1
+2025-05-27 08:50:38,170 [INFO] [+] New connection from ('127.0.0.1', 56406)
+2025-05-27 08:50:38,171 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56406): CONNECT cdn.speedcurve.com:443 HTTP/1.1
+2025-05-27 08:50:39,098 [INFO] [+] New connection from ('127.0.0.1', 56408)
+2025-05-27 08:50:39,101 [INFO] [>] HTTP Request from ('127.0.0.1', 56408) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=970161661&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=971057422&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:39,102 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:39,103 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:39,372 [INFO] [+] New connection from ('127.0.0.1', 56412)
+2025-05-27 08:50:39,373 [INFO] [>] HTTP Request from ('127.0.0.1', 56412) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=294100263&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=715107582&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:39,374 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:39,375 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:39,898 [INFO] [+] New connection from ('127.0.0.1', 56413)
+2025-05-27 08:50:39,899 [INFO] [>] HTTP Request from ('127.0.0.1', 56413) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=343137070&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=825695641&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:39,900 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:39,900 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:40,069 [INFO] [+] New connection from ('127.0.0.1', 56414)
+2025-05-27 08:50:40,070 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56414): CONNECT optimizationguide-pa.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:40,295 [INFO] [+] New connection from ('127.0.0.1', 56416)
+2025-05-27 08:50:40,544 [INFO] [+] New connection from ('127.0.0.1', 56417)
+2025-05-27 08:50:40,547 [INFO] [+] New connection from ('127.0.0.1', 56418)
+2025-05-27 08:50:40,550 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56418): CONNECT use.fontawesome.com:443 HTTP/1.1
+2025-05-27 08:50:40,552 [INFO] [+] New connection from ('127.0.0.1', 56419)
+2025-05-27 08:50:40,555 [INFO] [>] HTTP Request from ('127.0.0.1', 56416) to web.simmons.edu:80 for GET http://web.simmons.edu/~grovesd/comm244/notes/week2/links HTTP/1.1
+2025-05-27 08:50:40,575 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56419): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-27 08:50:40,575 [INFO] [+] New connection from ('127.0.0.1', 56420)
+2025-05-27 08:50:40,575 [INFO] Cache hit for key: http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-27 08:50:40,603 [INFO] [Cache HIT] http://web.simmons.edu/~grovesd/comm244/notes/week2/links
+2025-05-27 08:50:40,603 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56420): CONNECT www.googletagmanager.com:443 HTTP/1.1
+2025-05-27 08:50:40,926 [INFO] [+] New connection from ('127.0.0.1', 56424)
+2025-05-27 08:50:40,927 [INFO] [>] HTTP Request from ('127.0.0.1', 56424) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=486061313&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=633708994&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:40,928 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:40,928 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:41,067 [INFO] [>] HTTP Request from ('127.0.0.1', 56417) to web.simmons.edu:80 for GET http://web.simmons.edu/favicon.ico HTTP/1.1
+2025-05-27 08:50:41,069 [INFO] Cache hit for key: http://web.simmons.edu/favicon.ico
+2025-05-27 08:50:41,069 [INFO] [Cache HIT] http://web.simmons.edu/favicon.ico
+2025-05-27 08:50:41,220 [INFO] [+] New connection from ('127.0.0.1', 56425)
+2025-05-27 08:50:41,222 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56425): CONNECT dev.to:443 HTTP/1.1
+2025-05-27 08:50:41,222 [INFO] [+] New connection from ('127.0.0.1', 56426)
+2025-05-27 08:50:41,223 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56426): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:50:41,426 [INFO] [+] New connection from ('127.0.0.1', 56428)
+2025-05-27 08:50:41,427 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56428): CONNECT www.googletagmanager.com:443 HTTP/1.1
+2025-05-27 08:50:41,772 [INFO] [+] New connection from ('127.0.0.1', 56431)
+2025-05-27 08:50:41,773 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56431): CONNECT almanac.httparchive.org:443 HTTP/1.1
+2025-05-27 08:50:41,950 [INFO] [+] New connection from ('127.0.0.1', 56432)
+2025-05-27 08:50:41,953 [INFO] [>] HTTP Request from ('127.0.0.1', 56432) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=106560242&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=148303730&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:41,957 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:41,959 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:41,965 [INFO] [+] New connection from ('127.0.0.1', 56433)
+2025-05-27 08:50:42,005 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56433): CONNECT www.google-analytics.com:443 HTTP/1.1
+2025-05-27 08:50:42,976 [INFO] [+] New connection from ('127.0.0.1', 56436)
+2025-05-27 08:50:42,978 [INFO] [>] HTTP Request from ('127.0.0.1', 56436) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=368254144&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=968200583&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:42,979 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:42,979 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:43,086 [INFO] [+] New connection from ('127.0.0.1', 56437)
+2025-05-27 08:50:43,087 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56437): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:50:43,585 [INFO] [+] New connection from ('127.0.0.1', 56439)
+2025-05-27 08:50:43,588 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56439): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:50:43,770 [INFO] [+] New connection from ('127.0.0.1', 56441)
+2025-05-27 08:50:43,902 [INFO] [+] New connection from ('127.0.0.1', 56442)
+2025-05-27 08:50:43,904 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56442): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:50:44,008 [INFO] [+] New connection from ('127.0.0.1', 56444)
+2025-05-27 08:50:44,018 [INFO] [>] HTTP Request from ('127.0.0.1', 56441) to httpbin.org:80 for GET http://httpbin.org/ HTTP/1.1
+2025-05-27 08:50:44,020 [INFO] Cache hit for key: http://httpbin.org/
+2025-05-27 08:50:44,020 [INFO] [Cache HIT] http://httpbin.org/
+2025-05-27 08:50:44,091 [INFO] [+] New connection from ('127.0.0.1', 56445)
+2025-05-27 08:50:44,091 [INFO] [>] HTTP Request from ('127.0.0.1', 56444) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/swagger-ui.css HTTP/1.1
+2025-05-27 08:50:44,092 [INFO] [>] HTTP Request from ('127.0.0.1', 56445) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/swagger-ui-bundle.js HTTP/1.1
+2025-05-27 08:50:44,092 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/swagger-ui.css
+2025-05-27 08:50:44,094 [INFO] [+] New connection from ('127.0.0.1', 56446)
+2025-05-27 08:50:44,094 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/swagger-ui.css
+2025-05-27 08:50:44,094 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/swagger-ui-bundle.js
+2025-05-27 08:50:44,119 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/swagger-ui-bundle.js
+2025-05-27 08:50:44,120 [INFO] [>] HTTP Request from ('127.0.0.1', 56446) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1
+2025-05-27 08:50:44,120 [INFO] [+] New connection from ('127.0.0.1', 56447)
+2025-05-27 08:50:44,144 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/swagger-ui-standalone-preset.js
+2025-05-27 08:50:44,145 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/swagger-ui-standalone-preset.js
+2025-05-27 08:50:44,146 [INFO] [>] HTTP Request from ('127.0.0.1', 56447) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/lib/jquery.min.js HTTP/1.1
+2025-05-27 08:50:44,146 [INFO] [+] New connection from ('127.0.0.1', 56448)
+2025-05-27 08:50:44,148 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/lib/jquery.min.js
+2025-05-27 08:50:44,149 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/lib/jquery.min.js
+2025-05-27 08:50:44,150 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56448): CONNECT fonts.gstatic.com:443 HTTP/1.1
+2025-05-27 08:50:44,161 [INFO] [+] New connection from ('127.0.0.1', 56449)
+2025-05-27 08:50:44,187 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56449): CONNECT fonts.googleapis.com:443 HTTP/1.1
+2025-05-27 08:50:44,305 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 56442) <-> discuss.httparchive.org | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:50:44,439 [INFO] [+] New connection from ('127.0.0.1', 56452)
+2025-05-27 08:50:44,441 [INFO] [>] HTTP Request from ('127.0.0.1', 56452) to httpbin.org:80 for GET http://httpbin.org/spec.json HTTP/1.1
+2025-05-27 08:50:44,441 [INFO] Cache hit for key: http://httpbin.org/spec.json
+2025-05-27 08:50:44,442 [INFO] [Cache HIT] http://httpbin.org/spec.json
+2025-05-27 08:50:46,043 [INFO] [+] New connection from ('127.0.0.1', 56454)
+2025-05-27 08:50:46,044 [INFO] [>] HTTP Request from ('127.0.0.1', 56454) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=915796533&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=404124143&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:46,045 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:46,046 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:46,309 [INFO] [+] New connection from ('127.0.0.1', 56455)
+2025-05-27 08:50:46,555 [INFO] [+] New connection from ('127.0.0.1', 56456)
+2025-05-27 08:50:47,074 [INFO] [+] New connection from ('127.0.0.1', 56457)
+2025-05-27 08:50:47,075 [INFO] [>] HTTP Request from ('127.0.0.1', 56457) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=177490435&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=224020997&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:47,076 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:47,076 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:48,085 [INFO] [+] New connection from ('127.0.0.1', 56458)
+2025-05-27 08:50:48,087 [INFO] [>] HTTP Request from ('127.0.0.1', 56458) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=961609651&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=337336469&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:48,087 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:48,088 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:49,258 [INFO] [+] New connection from ('127.0.0.1', 56459)
+2025-05-27 08:50:49,496 [INFO] [+] New connection from ('127.0.0.1', 56460)
+2025-05-27 08:50:50,137 [INFO] [+] New connection from ('127.0.0.1', 56461)
+2025-05-27 08:50:50,139 [INFO] [>] HTTP Request from ('127.0.0.1', 56461) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=202607509&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=366525939&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:50,139 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:50,140 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:51,154 [INFO] [+] New connection from ('127.0.0.1', 56462)
+2025-05-27 08:50:51,156 [INFO] [>] HTTP Request from ('127.0.0.1', 56462) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=986726725&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=479841411&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:50:51,156 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:51,158 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:50:55,681 [INFO] [+] New connection from ('127.0.0.1', 56463)
+2025-05-27 08:50:55,682 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56463): CONNECT mobile.events.data.microsoft.com:443 HTTP/1.0
+2025-05-27 08:50:57,013 [INFO] [+] New connection from ('127.0.0.1', 56465)
+2025-05-27 08:50:57,015 [INFO] [+] New connection from ('127.0.0.1', 56466)
+2025-05-27 08:50:57,015 [INFO] [Blocked] Attempted access to httpbin.org
+2025-05-27 08:50:59,130 [INFO] [>] HTTP Request from ('127.0.0.1', 56390) to httpforever.com:80 for GET http://httpforever.com/ HTTP/1.1
+2025-05-27 08:50:59,131 [INFO] Cache hit for key: http://httpforever.com/
+2025-05-27 08:50:59,131 [INFO] [Cache HIT] http://httpforever.com/
+2025-05-27 08:50:59,539 [INFO] [+] New connection from ('127.0.0.1', 56467)
+2025-05-27 08:50:59,540 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56467): CONNECT android.clients.google.com:443 HTTP/1.1
+2025-05-27 08:51:00,074 [INFO] [+] New connection from ('127.0.0.1', 56470)
+2025-05-27 08:51:00,076 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56470): CONNECT www.googleapis.com:443 HTTP/1.1
+2025-05-27 08:51:02,218 [INFO] [+] New connection from ('127.0.0.1', 56472)
+2025-05-27 08:51:02,228 [INFO] [>] HTTP Request from ('127.0.0.1', 56466) to httpbin.org:80 for GET http://httpbin.org/ HTTP/1.1
+2025-05-27 08:51:02,229 [INFO] Cache hit for key: http://httpbin.org/
+2025-05-27 08:51:02,230 [INFO] [Cache HIT] http://httpbin.org/
+2025-05-27 08:51:02,280 [INFO] [+] New connection from ('127.0.0.1', 56473)
+2025-05-27 08:51:02,281 [INFO] [>] HTTP Request from ('127.0.0.1', 56472) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/swagger-ui.css HTTP/1.1
+2025-05-27 08:51:02,289 [INFO] [>] HTTP Request from ('127.0.0.1', 56473) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/swagger-ui-bundle.js HTTP/1.1
+2025-05-27 08:51:02,289 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/swagger-ui.css
+2025-05-27 08:51:02,289 [INFO] [+] New connection from ('127.0.0.1', 56474)
+2025-05-27 08:51:02,290 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/swagger-ui.css
+2025-05-27 08:51:02,290 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/swagger-ui-bundle.js
+2025-05-27 08:51:02,358 [INFO] [>] HTTP Request from ('127.0.0.1', 56474) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1
+2025-05-27 08:51:02,358 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/swagger-ui-bundle.js
+2025-05-27 08:51:02,359 [INFO] [+] New connection from ('127.0.0.1', 56475)
+2025-05-27 08:51:02,367 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/swagger-ui-standalone-preset.js
+2025-05-27 08:51:02,367 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/swagger-ui-standalone-preset.js
+2025-05-27 08:51:02,368 [INFO] [>] HTTP Request from ('127.0.0.1', 56475) to httpbin.org:80 for GET http://httpbin.org/flasgger_static/lib/jquery.min.js HTTP/1.1
+2025-05-27 08:51:02,395 [INFO] Cache hit for key: http://httpbin.org/flasgger_static/lib/jquery.min.js
+2025-05-27 08:51:02,396 [INFO] [Cache HIT] http://httpbin.org/flasgger_static/lib/jquery.min.js
+2025-05-27 08:51:02,489 [INFO] [+] New connection from ('127.0.0.1', 56476)
+2025-05-27 08:51:02,491 [INFO] [>] HTTP Request from ('127.0.0.1', 56476) to httpbin.org:80 for GET http://httpbin.org/spec.json HTTP/1.1
+2025-05-27 08:51:02,491 [INFO] Cache hit for key: http://httpbin.org/spec.json
+2025-05-27 08:51:02,493 [INFO] [Cache HIT] http://httpbin.org/spec.json
+2025-05-27 08:51:02,494 [INFO] [+] New connection from ('127.0.0.1', 56477)
+2025-05-27 08:51:02,519 [INFO] [>] HTTP Request from ('127.0.0.1', 56477) to httpbin.org:80 for GET http://httpbin.org/static/favicon.ico HTTP/1.1
+2025-05-27 08:51:02,519 [INFO] Cache hit for key: http://httpbin.org/static/favicon.ico
+2025-05-27 08:51:02,520 [INFO] [Cache HIT] http://httpbin.org/static/favicon.ico
+2025-05-27 08:51:19,737 [INFO] [+] New connection from ('127.0.0.1', 56478)
+2025-05-27 08:51:19,738 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56478): CONNECT www.google.com:443 HTTP/1.1
+2025-05-27 08:51:23,296 [INFO] [+] New connection from ('127.0.0.1', 56481)
+2025-05-27 08:51:23,297 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56481): CONNECT main.vscode-cdn.net:443 HTTP/1.1
+2025-05-27 08:51:28,046 [INFO] [+] New connection from ('127.0.0.1', 56484)
+2025-05-27 08:51:28,053 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56484): CONNECT lux.speedcurve.com:443 HTTP/1.1
+2025-05-27 08:51:28,823 [INFO] [+] New connection from ('127.0.0.1', 56487)
+2025-05-27 08:51:28,825 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56487): CONNECT beacon.speedcurve.com:443 HTTP/1.1
+2025-05-27 08:51:30,023 [INFO] [+] New connection from ('127.0.0.1', 56489)
+2025-05-27 08:51:30,025 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56489): CONNECT clientservices.googleapis.com:443 HTTP/1.1
+2025-05-27 08:51:30,072 [INFO] [+] New connection from ('127.0.0.1', 56491)
+2025-05-27 08:51:30,087 [INFO] [>] HTTP Request from ('127.0.0.1', 56391) to httpforever.com:80 for GET http://httpforever.com/ HTTP/1.1
+2025-05-27 08:51:30,089 [INFO] Cache hit for key: http://httpforever.com/
+2025-05-27 08:51:30,090 [INFO] [Cache HIT] http://httpforever.com/
+2025-05-27 08:51:30,340 [INFO] [+] New connection from ('127.0.0.1', 56492)
+2025-05-27 08:51:30,341 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56492): CONNECT update.googleapis.com:443 HTTP/1.1
+2025-05-27 08:51:31,297 [INFO] [+] New connection from ('127.0.0.1', 56494)
+2025-05-27 08:51:31,298 [INFO] [>] HTTP Request from ('127.0.0.1', 56494) to edgedl.me.gvt1.com:80 for HEAD http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b HTTP/1.1
+2025-05-27 08:51:31,299 [INFO] Cache miss for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:31,299 [INFO] [Cache MISS] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:36,034 [INFO] [+] New connection from ('127.0.0.1', 56502)
+2025-05-27 08:51:36,037 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56502): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:51:36,833 [WARNING] [!] Timeout while reading from edgedl.me.gvt1.com
+2025-05-27 08:51:36,833 [INFO] Setting cache for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b with value: b'HTTP/1.1 200 OK\r\naccept-ranges: bytes\r\ncontent-disposition: attachment\r\ncontent-length: 42047\r\ncontent-security-policy: default-src \'none\'\r\nserver: Google-Edge-Cache\r\nx-content-type-options: nosniff\r\nx-frame-options: SAMEORIGIN\r\nx-xss-protection: 0\r\nx-request-id: 9abfa789-ac74-487e-bc1e-e7e1f9bf24ec\r\ndate: Tue, 27 May 2025 00:46:23 GMT\r\nage: 9371\r\nlast-modified: Tue, 27 May 2025 00:44:17 GMT\r\netag: "45507cf"\r\ncontent-type: application/octet-stream\r\nalt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000\r\ncache-control: public,max-age=86400\r\ncoprocessor-response: download-server\r\n\r\n'
+2025-05-27 08:51:36,836 [INFO] [Status Code] HTTP/1.1 200 OK
+2025-05-27 08:51:36,836 [INFO] [Response] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b | Method: GET | Duration: 5.54s
+2025-05-27 08:51:36,867 [INFO] [+] New connection from ('127.0.0.1', 56504)
+2025-05-27 08:51:36,871 [INFO] [>] HTTP Request from ('127.0.0.1', 56504) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b HTTP/1.1
+2025-05-27 08:51:36,871 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:36,872 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:36,929 [INFO] [+] New connection from ('127.0.0.1', 56505)
+2025-05-27 08:51:36,931 [INFO] [>] HTTP Request from ('127.0.0.1', 56505) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b HTTP/1.1
+2025-05-27 08:51:36,931 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:36,932 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:36,991 [INFO] [+] New connection from ('127.0.0.1', 56506)
+2025-05-27 08:51:36,992 [INFO] [>] HTTP Request from ('127.0.0.1', 56506) to edgedl.me.gvt1.com:80 for GET http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b HTTP/1.1
+2025-05-27 08:51:36,993 [INFO] Cache hit for key: http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:36,993 [INFO] [Cache HIT] http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/bff42e24e9d215644e827dd7a04adbddb856dfaaeee191f633f94bc00472b74b
+2025-05-27 08:51:37,544 [INFO] [+] New connection from ('127.0.0.1', 56507)
+2025-05-27 08:51:37,545 [INFO] [>] HTTP Request from ('127.0.0.1', 56507) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=819477273&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=462930031&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:51:37,546 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:37,547 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:37,915 [INFO] [+] New connection from ('127.0.0.1', 56508)
+2025-05-27 08:51:37,917 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56508): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-27 08:51:38,062 [INFO] [+] New connection from ('127.0.0.1', 56509)
+2025-05-27 08:51:38,064 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56509): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-27 08:51:38,291 [INFO] [+] New connection from ('127.0.0.1', 56512)
+2025-05-27 08:51:38,293 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56512): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:51:38,332 [INFO] [+] New connection from ('127.0.0.1', 56514)
+2025-05-27 08:51:38,334 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56514): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-27 08:51:38,476 [INFO] [+] New connection from ('127.0.0.1', 56516)
+2025-05-27 08:51:38,478 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56516): CONNECT us.search.yahoo.com:443 HTTP/1.1
+2025-05-27 08:51:38,595 [INFO] [+] New connection from ('127.0.0.1', 56518)
+2025-05-27 08:51:38,597 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56518): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:51:38,597 [INFO] [+] New connection from ('127.0.0.1', 56519)
+2025-05-27 08:51:38,621 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56519): CONNECT discuss.httparchive.org:443 HTTP/1.1
+2025-05-27 08:51:39,394 [WARNING] [!] Connection error in HTTPS tunnel: ('127.0.0.1', 56519) <-> discuss.httparchive.org | [WinError 10053] An established connection was aborted by the software in your host machine
+2025-05-27 08:51:40,298 [INFO] [+] New connection from ('127.0.0.1', 56523)
+2025-05-27 08:51:40,300 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56523): CONNECT www.apple.com:443 HTTP/1.1
+2025-05-27 08:51:40,302 [INFO] [Blocked HTTPS] Attempted access to www.apple.com
+2025-05-27 08:51:40,332 [INFO] [+] New connection from ('127.0.0.1', 56524)
+2025-05-27 08:51:40,361 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56524): CONNECT www.apple.com:443 HTTP/1.1
+2025-05-27 08:51:40,362 [INFO] [Blocked HTTPS] Attempted access to www.apple.com
+2025-05-27 08:51:41,455 [INFO] [+] New connection from ('127.0.0.1', 56525)
+2025-05-27 08:51:41,457 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56525): CONNECT www.apple.com:443 HTTP/1.1
+2025-05-27 08:51:41,458 [INFO] [Blocked HTTPS] Attempted access to www.apple.com
+2025-05-27 08:51:41,491 [INFO] [+] New connection from ('127.0.0.1', 56526)
+2025-05-27 08:51:41,519 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56526): CONNECT www.apple.com:443 HTTP/1.1
+2025-05-27 08:51:41,519 [INFO] [Blocked HTTPS] Attempted access to www.apple.com
+2025-05-27 08:51:41,649 [INFO] [+] New connection from ('127.0.0.1', 56527)
+2025-05-27 08:51:41,651 [INFO] [>] HTTP Request from ('127.0.0.1', 56527) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=106288249&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=425331827&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:51:41,652 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:41,652 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:43,687 [INFO] [+] New connection from ('127.0.0.1', 56528)
+2025-05-27 08:51:43,702 [INFO] [>] HTTP Request from ('127.0.0.1', 56528) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=510906394&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=53242034&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:51:43,703 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:43,703 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:43,715 [INFO] [+] New connection from ('127.0.0.1', 56529)
+2025-05-27 08:51:43,739 [INFO] [>] HTTP Request from ('127.0.0.1', 56529) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=869711421&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=747939916&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:51:43,739 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:43,741 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:45,787 [INFO] [+] New connection from ('127.0.0.1', 56530)
+2025-05-27 08:51:45,788 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56530): CONNECT www.facebook.com:443 HTTP/1.1
+2025-05-27 08:51:45,789 [INFO] [+] New connection from ('127.0.0.1', 56531)
+2025-05-27 08:51:45,789 [INFO] [Blocked HTTPS] Attempted access to www.facebook.com
+2025-05-27 08:51:45,792 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56531): CONNECT static.xx.fbcdn.net:443 HTTP/1.1
+2025-05-27 08:51:45,794 [INFO] [+] New connection from ('127.0.0.1', 56532)
+2025-05-27 08:51:45,823 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56532): CONNECT www.facebook.com:443 HTTP/1.1
+2025-05-27 08:51:45,823 [INFO] [Blocked HTTPS] Attempted access to www.facebook.com
+2025-05-27 08:51:46,718 [INFO] [+] New connection from ('127.0.0.1', 56535)
+2025-05-27 08:51:46,719 [INFO] [>] HTTP Request from ('127.0.0.1', 56535) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=982033702&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=405071950&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:51:46,719 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:46,721 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:46,908 [INFO] [+] New connection from ('127.0.0.1', 56536)
+2025-05-27 08:51:46,913 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56536): CONNECT www.facebook.com:443 HTTP/1.1
+2025-05-27 08:51:46,915 [INFO] [Blocked HTTPS] Attempted access to www.facebook.com
+2025-05-27 08:51:46,943 [INFO] [+] New connection from ('127.0.0.1', 56537)
+2025-05-27 08:51:46,966 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56537): CONNECT www.facebook.com:443 HTTP/1.1
+2025-05-27 08:51:46,966 [INFO] [Blocked HTTPS] Attempted access to www.facebook.com
+2025-05-27 08:51:48,707 [INFO] [+] New connection from ('127.0.0.1', 56538)
+2025-05-27 08:51:48,710 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56538): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-27 08:51:48,753 [INFO] [+] New connection from ('127.0.0.1', 56539)
+2025-05-27 08:51:48,756 [INFO] [>] HTTP Request from ('127.0.0.1', 56539) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=550272134&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=631702893&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:51:48,756 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:48,758 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:49,008 [INFO] [+] New connection from ('127.0.0.1', 56541)
+2025-05-27 08:51:49,010 [INFO] [+] New connection from ('127.0.0.1', 56542)
+2025-05-27 08:51:49,010 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56541): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-27 08:51:49,013 [INFO] [+] New connection from ('127.0.0.1', 56543)
+2025-05-27 08:51:49,013 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56542): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-27 08:51:49,014 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56543): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-27 08:51:49,015 [INFO] [+] New connection from ('127.0.0.1', 56544)
+2025-05-27 08:51:49,033 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56544): CONNECT s.yimg.com:443 HTTP/1.1
+2025-05-27 08:51:49,783 [INFO] [+] New connection from ('127.0.0.1', 56549)
+2025-05-27 08:51:49,785 [INFO] [>] HTTP Request from ('127.0.0.1', 56549) to www.google-analytics.com:80 for GET http://www.google-analytics.com/__utm.gif?utmwv=4.7.2&utmn=170771063&utmhn=&utmcs=UTF-8&utmsr=1536x864&utmsc=-&utmul=Installed:%20en-US,%20Current:%20,%20GUI:%20,%20App:%20&utmje=0&utmfl=-&utmdt=&utmhid=146297628&utmr=/&utmp=/&utmac=UA-80584726-1&utmcc=__utma%3D0.1961592905.1741612375.1747716760.1748157585.59%3B%2B__utmz%3D0.1748157585.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%7Cutmcmd%3D%3B&utme=5%28GamesManager%2ABeta%20Game%20Started%2AChrome%29%28%29&gaq=1&utmt=event HTTP/1.1
+2025-05-27 08:51:49,785 [INFO] Cache hit for key: http://www.google-analytics.com/__utm.gif
+2025-05-27 08:51:49,786 [INFO] [Cache HIT] http://www.google-analytics.com/__utm.gif
+2025-05-27 08:52:09,072 [INFO] [+] New connection from ('127.0.0.1', 56551)
+2025-05-27 08:52:09,074 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56551): CONNECT chromewebstore.googleapis.com:443 HTTP/1.1
+2025-05-27 08:52:17,776 [INFO] [+] New connection from ('127.0.0.1', 56553)
+2025-05-27 08:52:17,779 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56553): CONNECT analyticsnew.overwolf.com:443 HTTP/1.1
+2025-05-27 08:52:19,800 [INFO] [+] New connection from ('127.0.0.1', 56555)
+2025-05-27 08:52:19,801 [INFO] [>] HTTPS CONNECT from ('127.0.0.1', 56555): CONNECT www.google.com:443 HTTP/1.1
