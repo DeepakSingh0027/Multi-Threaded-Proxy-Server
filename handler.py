@@ -50,10 +50,6 @@ def handle_client(client_socket, client_addr):
     finally:
         client_socket.close()
 
-
-
-
-
 def handle_http(client_socket, request, client_addr):
     dest_host = None
     try:

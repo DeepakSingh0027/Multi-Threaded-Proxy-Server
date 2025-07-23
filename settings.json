@@ -1,10 +1,11 @@
 {
-  "host": "127.0.0.1",
+  "host": "0.0.0.0",
   "port": 8888,
   "cache_limit": 50,
   "blacklist": [
-    "facebook.com",
     "apple.com",
-    "httpbin.org/get"
+    "httpbin.org/get",
+    "youtube.com",
+    "facebook.com"
   ]
 }
